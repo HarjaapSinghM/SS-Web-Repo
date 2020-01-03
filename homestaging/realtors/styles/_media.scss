@@ -1,0 +1,227 @@
+@media (max-width: 1442px) {
+    nav {
+        font-size: 1.4rem;
+    
+        .navRight {
+        width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    h3 {
+        font-size: $sectionHeadingFontSize * 0.8;
+        line-height: $sectionHeadingLineHeight * 0.8;
+    }
+    
+    .family .familyText h4 {
+        font-size: $bodyFontSize * 0.9;
+        line-height: $bodyLineHeight * 0.9;
+        width: 100%;
+    }
+
+    .footerMain {
+        
+        .footerSub {
+            font-size: $bodyFontSize * 0.8;
+            line-height: $bodyLineHeight * 0.8;
+        }
+    }
+    
+    #legal {
+        display: none;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        
+        .cardWrap {
+            width: 100%;
+        
+            .cardTile {
+                height: 35rem;
+            }
+        }
+
+        .cardWrap + .cardWrap {
+            margin-top: 5rem;
+        }
+    
+    }
+}
+
+@media (max-width: 1000px) {
+    .twoPhotos {
+        .pic {
+            height: 15rem;
+        }
+
+        .first  {
+            width: 100%;
+            margin: 0%;
+        }
+
+        .second {
+            display: none;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .agentReco {
+        .reco {
+            font-size: $bodyFontSize * 0.8;
+            line-height: $bodyLineHeight * 0.8;
+        }
+
+        .agentAbout {
+            font-size: $bodyFontSize * 0.7;
+            line-height: $bodyLineHeight * 0.7;
+        }
+    
+        .agentImg {
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .leftText {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footerTop {
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+
+        .leftText {
+            width: 100%;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0%;
+        }
+
+        .callCTA {
+            text-align: center;
+            margin: 5% auto;
+        }
+
+    }
+
+    .footerMain {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+
+        .footerSub {
+            text-align: center;
+        }
+
+        .logo {
+            order: 3;
+            width: 100%;
+            text-align: center;
+        }
+
+        #navigation {
+            order: 1;
+        }
+    }
+
+    .agentReco {
+        .agentImg {
+            display: none;
+        }
+
+        .leftText {
+            width: 87%;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .accolades{
+        flex-wrap: wrap;
+
+        .acco {
+            width: 48%;  
+        }
+        
+        .bottom {
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 763px) {
+    .family {
+        flex-wrap: wrap;
+
+        .familyPhoto {
+            width: 100%;
+        }
+
+        .familyText {
+            width: 84%;
+        }
+    }
+
+    .ctaCards {
+
+        .ctaCardWrap {
+            width: 46%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .ctaCards {
+        flex-wrap: wrap;
+
+        .ctaCardWrap {
+            width: 100%;
+        }
+
+        .ctaCardWrap + .ctaCardWrap {
+            margin-top: 5rem;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .footerMain {
+        flex-direction: column-reverse;
+        
+        .logo {
+            order: 0;
+        }
+
+        .footerSub {
+
+            .subItems {
+                flex-direction: column;
+            }
+
+            a {
+                margin-bottom: 1.5rem;
+            }
+
+            .social {
+                width: 23%;
+                margin: 0 auto;
+            }
+        }
+
+        .footerSub + .footerSub {
+            margin: 2rem 0rem;
+        }
+    }
+}

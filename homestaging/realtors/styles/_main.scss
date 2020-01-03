@@ -1,0 +1,226 @@
+h1 {
+    font: $headingFont;
+    margin: 0%;
+    padding: 15vh 0vh;
+    color: $primaryColour;
+}
+
+h2 {
+    font: $subheadingFont;
+    margin: 6% 0%;
+    width: 80%;
+}
+
+h3 {
+    font: $sectionHeadingFont;
+    color: $primaryColour;
+}
+
+h4 {
+    font: $baseFont;
+}
+
+.agentReco {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    // background-image: url('../images/marble.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    position: relative;
+    margin-bottom: 10rem;
+
+    ::after {
+        content: "";
+        background: url('../images/marble.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+    .quote {
+        font: $headingFont;
+        font-size: 4rem;
+        color: #CD8D81;
+        margin: 0%;
+    }
+
+    .reco {
+        font: $bodyFont;
+    }
+
+    .agentAbout {
+        font: $bodyFont;
+        color: $secondaryColour;
+        
+        p {
+            margin: 0;
+        }
+    
+    }
+
+    .agentImg {
+        width: 100%;
+        max-width: 100%;
+        text-align: right;
+    
+        ::after {
+            content: "";
+            background: none;
+        }
+    }
+}
+
+.accolades {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    .acco {
+        text-align: center;
+        font: $baseFont;
+        color: $primaryColour;
+        width: 23%;
+
+        i {
+            font-size: 3rem;
+        }
+        h4 {
+            font: $baseFont;
+            color: $primaryColour;
+            font-weight: bold;
+        }
+    }
+}
+
+.quoteCTA {
+    text-align: center;
+    margin-bottom: 7rem;
+    
+
+    :hover {
+        cursor: pointer;
+        color: $primaryColour;
+        background-color: white;
+        border: 1px solid $primaryColour;
+        transition: all 0.3s ease;
+    }
+
+    a {
+        background-color: $primaryColour;
+        font: $linkFont;
+        color: white;
+        display: inline-block;
+        padding: 1.5rem 10rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        border: 1px solid white;
+        white-space: nowrap;        
+    }
+    
+}
+
+.twoPhotos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+
+    .pic {
+        position: relative;
+        height: 30rem;
+        
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }   
+    }
+
+    .first {
+        width: calc(65% - 5rem);
+        margin-right: 5rem;
+    }
+
+    .second {
+        width: 35%;
+    }
+
+    // .second {
+    //     width: 30%;
+    // }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+    .cardWrap {
+        width: 30%;
+        
+        .cardTile {
+            height: 20rem;
+            overflow: hidden;
+            position: relative;
+            border-radius: 1rem 1rem 0rem 0rem;
+            
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                height: 100%; 
+                object-fit: cover; 
+                object-position: center center; 
+                opacity: 1; 
+                transition: opacity 500ms ease 0s;
+            }
+        }
+
+        .cardText {
+            font: $baseFont;
+            padding-bottom: 2%;
+            padding-left: 2%;
+            
+            .heading {
+                font: $bodyFont;
+                font-size: $bodyFontSize * 0.85;
+                line-height: $bodyLineHeight * 0.85;
+            }
+        }
+    }            
+}
+
+
+.cards ul {
+    margin-bottom: 2rem;
+
+    span {
+        font-weight: bolder;
+    }
+    
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+.cardText a {
+    text-decoration: none;
+    color: $primaryColour;
+    margin: 5% 0%;
+    font: $linkFontSize;
+    font-size: $linkFontSize * 1.3;
+    padding: 5rem 0rem;               
+}
+.cardText:hover a {
+    text-decoration: underline;
+    text-decoration-color: $primaryColour;
+}
