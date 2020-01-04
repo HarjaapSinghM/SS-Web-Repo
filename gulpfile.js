@@ -4,9 +4,9 @@ const imagemin = require("gulp-imagemin");
 
 function imgSquash() {
     return gulp 
-        .src("tourourhomes/beforeafter/images/*")
+        .src("tourourhomes/projects/liberty-village-lifestyle/images/*")
         .pipe(imagemin({ progressive: true, optimizationLevel: 7 }))
-        .pipe(gulp.dest("tourourhomes/beforeafter/minified"));
+        .pipe(gulp.dest("tourourhomes/projects/liberty-village-lifestyle/minified"));
 }
 
 gulp.task("imgSquash", imgSquash);
@@ -16,3 +16,4 @@ gulp.task("watch", () => {
 });
 
 gulp.task("default", gulp.series("imgSquash", "watch"));
+

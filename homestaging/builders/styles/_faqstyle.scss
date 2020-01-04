@@ -1,0 +1,49 @@
+.faq {
+    margin-bottom: 10rem;
+}
+
+.faq-content {
+    display: none;
+    font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+    color:#2E425B;
+}
+
+#content {
+    font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+    color:#2E425B;
+}
+.faq-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+.faq-search-box {
+    text-align: center;
+    margin-top: 5rem;
+}
+#faq-search {
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+#faq-search::placeholder {
+    font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+}
+
+.faq-plus {
+    float: right;
+}
+.faq-heading, .faq-plus {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+/* For mobile phones: */
+    .faq-box, #faq-search {
+        width: 60%;
+    }
+}
