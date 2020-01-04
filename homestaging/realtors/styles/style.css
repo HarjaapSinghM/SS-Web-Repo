@@ -430,6 +430,63 @@ h4 {
   -webkit-text-decoration-color: #2E425B;
   text-decoration-color: #2E425B; }
 
+.faq {
+  margin-bottom: 10rem; }
+
+.faq-content {
+  display: none;
+  font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+  color: #2E425B; }
+
+#content {
+  font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+  color: #2E425B; }
+
+.faq-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer; }
+
+.faq-search-box {
+  text-align: center; }
+
+#faq-search {
+  font-size: 17px;
+  border: 1px solid #ccc;
+  padding: 1rem; }
+
+#faq-search::-webkit-input-placeholder {
+  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+
+#faq-search:-ms-input-placeholder {
+  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+
+#faq-search::-ms-input-placeholder {
+  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+
+#faq-search::placeholder {
+  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+
+.faq-category {
+  text-align: center;
+  font: normal normal 500 5rem/6rem "Baskervville", serif;
+  color: #2E425B;
+  margin: 5rem 0; }
+
+.faq-plus {
+  float: right; }
+
+.faq-heading, .faq-plus {
+  display: inline-block; }
+
+@media only screen and (min-width: 768px) {
+  /* For mobile phones: */
+  .faq-box, #faq-search {
+    width: 60%; } }
+
 .footerTop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,5 +713,5 @@ h4 {
     .footerMain .footerSub + .footerSub {
       margin: 2rem 0rem; }
   h1 {
-    font-size: 5rem;
-    line-height: 7rem; } }
+    font-size: 4rem;
+    line-height: 6rem; } }
