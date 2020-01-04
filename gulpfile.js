@@ -1,11 +1,12 @@
-const gulp = require('gulp');
+const gulp = require("gulp");
 
-const imagemin = require('gulp-imagemin');
+const imagemin = require("gulp-imagemin");
 
 function imgSquash() {
-    return gulp .src("tourourhomes/beforeafter/images/*")
-    .pipe(imagemin())
-    .pipe(gulp.dest("tourourhomes/beforeafter/minified/*"));
+    return gulp 
+        .src("tourourhomes/beforeafter/images/*")
+        .pipe(imagemin({ progressive: true, optimizationLevel: 7 }))
+        .pipe(gulp.dest("tourourhomes/beforeafter/minified"));
 }
 
 gulp.task("imgSquash", imgSquash);
