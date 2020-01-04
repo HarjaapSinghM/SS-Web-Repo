@@ -22,6 +22,7 @@
 }
 .faq-search-box {
     text-align: center;
+    margin-top: 5rem;
 }
 #faq-search {
     font-size: 17px;
@@ -32,12 +33,7 @@
 #faq-search::placeholder {
     font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
 }
-.faq-category {
-    text-align: center;
-    font: $subheadingFont;
-    color: $primaryColour;
-    margin: 5rem 0;
-}
+
 .faq-plus {
     float: right;
 }

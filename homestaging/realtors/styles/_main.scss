@@ -159,7 +159,7 @@ h4 {
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 7%;
+    margin-top: 5rem;
     margin-bottom: 7%;
 
     .cardWrap {
@@ -223,4 +223,18 @@ h4 {
 .cardText:hover a {
     text-decoration: underline;
     text-decoration-color: $primaryColour;
+}
+
+.sectionHeading {
+    text-align: center;
+    font: $subheadingFont;
+    color: $primaryColour;
+    margin: 5rem 0 2rem 0;
+}
+
+.headingUnderline {
+    width: 9rem;
+    height: 0px;
+    border: 2px solid #C89AA4;
+    margin: 0 auto;
 }

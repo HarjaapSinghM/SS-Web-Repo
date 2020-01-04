@@ -376,7 +376,7 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 7%;
+  margin-top: 5rem;
   margin-bottom: 7%; }
   .cards .cardWrap {
     width: 30%; }
@@ -430,6 +430,18 @@ h4 {
   -webkit-text-decoration-color: #2E425B;
   text-decoration-color: #2E425B; }
 
+.sectionHeading {
+  text-align: center;
+  font: normal normal 500 5rem/6rem "Baskervville", serif;
+  color: #2E425B;
+  margin: 5rem 0 2rem 0; }
+
+.headingUnderline {
+  width: 9rem;
+  height: 0px;
+  border: 2px solid #C89AA4;
+  margin: 0 auto; }
+
 .faq {
   margin-bottom: 10rem; }
 
@@ -451,7 +463,8 @@ h4 {
   cursor: pointer; }
 
 .faq-search-box {
-  text-align: center; }
+  text-align: center;
+  margin-top: 5rem; }
 
 #faq-search {
   font-size: 17px;
@@ -469,12 +482,6 @@ h4 {
 
 #faq-search::placeholder {
   font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
-
-.faq-category {
-  text-align: center;
-  font: normal normal 500 5rem/6rem "Baskervville", serif;
-  color: #2E425B;
-  margin: 5rem 0; }
 
 .faq-plus {
   float: right; }
