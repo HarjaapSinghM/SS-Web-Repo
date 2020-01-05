@@ -49,8 +49,17 @@
     
     }
 
-    .transforms .pic {
-        height: 30rem;
+    .twoThirds {
+        .twoT,
+        .oneT {
+            height: 30rem;
+        }
+    }
+    
+    .halves {
+        .halfT {
+            height: 30rem;
+        }
     }
 }
 
@@ -90,6 +99,18 @@
 
     }
 
+    .twoThirds {
+        .twoT,
+        .oneT {
+            height: 25rem;
+        }
+    }
+    
+    .halves {
+        .halfT {
+            height: 25rem;
+        }
+    }
     
 }
 @media (max-width: 900px) {
@@ -119,6 +140,33 @@
 
         .leftText {
             width: 70%;
+        }
+    }
+
+    .twoThirds {
+        flex-wrap: wrap;
+        .twoT,
+        .oneT {
+            width: 100%;
+            height: 40rem;
+            margin-bottom: 0.75rem;
+        }
+
+        :nth-child(2) {
+            margin-left: 0rem;
+        }
+    }
+    
+    .halves {
+        flex-wrap: wrap;
+        .halfT {
+            height: 40rem;
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        :nth-child(2) {
+            margin-left: 0rem;
         }
     }
 }
@@ -243,6 +291,12 @@
     h1 {
         font-size: 5rem;
         line-height: 7rem;
+    }
+
+    .projectDesc {
+        width: 90%;
+        font-size: $bodyFontSize * 0.8;
+        line-height: $bodyLineHeight * 0.8;
     }
 }
 
