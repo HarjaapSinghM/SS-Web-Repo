@@ -1,7 +1,8 @@
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding: 15vh 0vh;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
     color: $primaryColour;
 }
 
@@ -20,83 +21,6 @@ h4 {
     font: $baseFont;
 }
 
-.agentReco {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 3rem;
-    // background-image: url('../images/marble.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    position: relative;
-    margin-bottom: 10rem;
-
-    ::after {
-        content: "";
-        background: url('../images/marble.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        opacity: 0.1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;   
-    }
-    .quote {
-        font: $headingFont;
-        font-size: 4rem;
-        color: #CD8D81;
-        margin: 0%;
-    }
-
-    .reco {
-        font: $bodyFont;
-    }
-
-    .agentAbout {
-        font: $bodyFont;
-        color: $secondaryColour;
-        
-        p {
-            margin: 0;
-        }
-    
-    }
-
-    .agentImg {
-        width: 100%;
-        max-width: 100%;
-        text-align: right;
-    
-        ::after {
-            content: "";
-            background: none;
-        }
-    }
-}
-
-.accolades {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6rem;
-    .acco {
-        text-align: center;
-        font: $baseFont;
-        color: $primaryColour;
-        width: 23%;
-
-        i {
-            font-size: 5rem;
-        }
-        h4 {
-            font: $baseFont;
-            color: $primaryColour;
-            font-weight: bold;
-        }
-    }
-}
 
 .quoteCTA {
     text-align: center;
@@ -125,41 +49,11 @@ h4 {
     
 }
 
-.twoPhotos {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10rem;
-
-    .pic {
-        position: relative;
-        height: 30rem;
-        
-        img {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }   
-    }
-
-    .first {
-        width: calc(65% - 5rem);
-        margin-right: 5rem;
-    }
-
-    .second {
-        width: 35%;
-    }
-
-    // .second {
-    //     width: 30%;
-    // }
-}
 
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin-top: 7%;
     margin-bottom: 7%;
 
     .cardWrap {
@@ -225,16 +119,110 @@ h4 {
     text-decoration-color: $primaryColour;
 }
 
-.sectionHeading {
-    text-align: center;
-    font: $subheadingFont;
-    color: $primaryColour;
-    margin: 5rem 0 2rem 0;
+.nextAndPrevious {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.headingUnderline {
-    width: 9rem;
-    height: 0px;
-    border: 2px solid #C89AA4;
-    margin: 0 auto;
+.previous,
+.next {
+    :hover {
+        cursor: pointer;
+        color: $primaryColour;
+    }
+
+    a {
+        text-decoration: none;
+        font: $bodyFont;
+        color: $secondaryColour;
+    }
 }
+
+.onePhoto {
+    width: 100%;
+    position: relative;
+    height: 50rem;
+    width: 100%;
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }   
+}
+
+.imageWrapper {
+    width: 98%;
+    margin: 0 auto 10rem auto;
+}
+
+.projectDesc {
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font: $bodyFont;
+    color: $primaryColour;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.twoThirds {
+    display: flex;
+    justify-content: space-between;
+
+    :nth-child(2) {
+        margin-left: 1.5rem;
+    }
+
+    .twoT {
+        width: calc(100% * 2 / 3);
+    }
+
+    .oneT {
+        width: calc(100% / 3);
+    }
+
+    .oneT,
+    .twoT {
+        position: relative;
+        height: 36rem;
+        margin-bottom: 1.5rem;
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }   
+    }
+} 
+
+.halves {
+    display: flex;
+    justify-content: space-between;
+
+    :nth-child(2) {
+        margin-left: 1.5rem;
+    }
+
+    .halfT {
+        width: calc(100% * 2);
+        position: relative;
+        height: 45rem;
+        margin-bottom: 1.5rem;
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }   
+    }
+} 
