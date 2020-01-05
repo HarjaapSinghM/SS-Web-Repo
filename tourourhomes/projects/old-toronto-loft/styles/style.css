@@ -379,7 +379,9 @@ h4 {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover; }
+    object-fit: cover;
+    -o-object-position: bottom;
+    object-position: bottom; }
 
 .imageWrapper {
   width: 98%;
@@ -419,7 +421,9 @@ h4 {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      -o-object-position: bottom;
+      object-position: bottom; }
 
 .halves {
   display: -webkit-box;
@@ -440,7 +444,9 @@ h4 {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      -o-object-position: bottom;
+      object-position: bottom; }
 
 .footerTop {
   display: -webkit-box;
