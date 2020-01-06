@@ -20,83 +20,6 @@ h4 {
     font: $baseFont;
 }
 
-.agentReco {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 3rem;
-    // background-image: url('../images/marble.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    position: relative;
-    margin-bottom: 10rem;
-
-    ::after {
-        content: "";
-        background: url('../images/marble.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        opacity: 0.1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;   
-    }
-    .quote {
-        font: $headingFont;
-        font-size: 4rem;
-        color: #CD8D81;
-        margin: 0%;
-    }
-
-    .reco {
-        font: $bodyFont;
-    }
-
-    .agentAbout {
-        font: $bodyFont;
-        color: $secondaryColour;
-        
-        p {
-            margin: 0;
-        }
-    
-    }
-
-    .agentImg {
-        width: 100%;
-        max-width: 100%;
-        text-align: right;
-    
-        ::after {
-            content: "";
-            background: none;
-        }
-    }
-}
-
-.accolades {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6rem;
-    .acco {
-        text-align: center;
-        font: $baseFont;
-        color: $primaryColour;
-        width: 23%;
-
-        i {
-            font-size: 3rem;
-        }
-        h4 {
-            font: $baseFont;
-            color: $primaryColour;
-            font-weight: bold;
-        }
-    }
-}
 
 .quoteCTA {
     text-align: center;
@@ -125,103 +48,17 @@ h4 {
     
 }
 
-.transforms {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10rem;
-    flex-wrap: wrap;
 
-    .pic {
-        position: relative;
-        height: 36rem;
-        width: calc(50% - 2.5rem);
-        
-        img {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }   
-    }
+.onePhoto {
+    width: 100%;
+    position: relative;
+    height: 35rem;
+    width: 100%;
 
-    .second {
-        width: 35%;
-    }
-
-    > :nth-child(n+3) {
-        margin-top: 5rem;
-    }
-
-    // .second {
-    //     width: 30%;
-    // }
-}
-
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7%;
-    margin-bottom: 7%;
-
-    .cardWrap {
-        width: 30%;
-        
-        .cardTile {
-            height: 20rem;
-            overflow: hidden;
-            position: relative;
-            border-radius: 1rem 1rem 0rem 0rem;
-            
-            img {
-                width: 100%;
-                max-width: 100%;
-                display: block;
-                position: absolute; 
-                top: 0px; 
-                left: 0px; 
-                height: 100%; 
-                object-fit: cover; 
-                object-position: center center; 
-                opacity: 1; 
-                transition: opacity 500ms ease 0s;
-            }
-        }
-
-        .cardText {
-            font: $baseFont;
-            padding-bottom: 2%;
-            padding-left: 2%;
-            
-            .heading {
-                font: $bodyFont;
-                font-size: $bodyFontSize * 0.85;
-                line-height: $bodyLineHeight * 0.85;
-            }
-        }
-    }            
-}
-
-
-.cards ul {
-    margin-bottom: 2rem;
-
-    span {
-        font-weight: bolder;
-    }
-    
-    li {
-        margin-bottom: 0.5rem;
-    }
-}
-.cardText a {
-    text-decoration: none;
-    color: $primaryColour;
-    margin: 5% 0%;
-    font: $linkFontSize;
-    font-size: $linkFontSize * 1.3;
-    padding: 5rem 0rem;               
-}
-.cardText:hover a {
-    text-decoration: underline;
-    text-decoration-color: $primaryColour;
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }   
 }

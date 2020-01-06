@@ -1,10 +1,53 @@
+.animate-sweet-in {
+    -webkit-animation:sweet-in 1s ease-out forwards;
+    animation:sweet-in 1s ease-out forwards;
+    opacity:0
+}
+
+// @-webkit-keyframes sweet-in {
+//     0% {
+//         opacity:0;
+//         -webkit-transform:translateY(40px);
+//         transform:translateY(40px)
+//     }
+//     to {
+//         opacity:1;
+//         -webkit-transform:translateY(0);
+//         transform:translateY(0)
+//     }
+// }
+
+@keyframes sweet-in {
+    0% {
+        opacity:0;
+        -webkit-transform:translateY(40px);
+        transform:translateY(40px)
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding: 15vh 0vh;
-    color: $primaryColour;
-    width: 71%;
+    padding: 15rem 0vh;
+    color: black;
+   
+    width: 90%;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    animation: sweet-in 1s ease-out forwards;
+
+    span {
+        color: $primaryColour;
+    }
 }
+
 
 h2 {
     font: $subheadingFont;
@@ -22,9 +65,10 @@ h4 {
 }
 
 .landingImage {
-    height: 80vh;
+    height: 70rem;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10rem;
 
     img {
         width: 100%;
@@ -184,7 +228,7 @@ h4 {
     font: $baseFont;
 }
 
-.jsx-1570720278.eagr-reviews-skeleton-container:nth-child(2) {
+.eagr-reviews-skeleton-container:nth-child(3) {
     display: none;
 }
 

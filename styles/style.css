@@ -243,12 +243,45 @@ nav {
   padding-left: 3%;
   margin-top: 0.5rem; }
 
+.animate-sweet-in {
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards;
+  opacity: 0; }
+
+@-webkit-keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
-  padding: 15vh 0vh;
-  color: #2E425B;
-  width: 71%; }
+  padding: 15rem 0vh;
+  color: black;
+  width: 90%;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards; }
+  h1 span {
+    color: #2E425B; }
 
 h2 {
   font: normal normal 500 5rem/6rem "Baskervville", serif;
@@ -263,9 +296,10 @@ h4 {
   font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
 
 .landingImage {
-  height: 80vh;
+  height: 70rem;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10rem; }
   .landingImage img {
     width: 100%;
     position: absolute;
@@ -407,7 +441,7 @@ h4 {
 .eagr-reviews-skeleton-container.jsx-1570720278 {
   font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
 
-.jsx-1570720278.eagr-reviews-skeleton-container:nth-child(2) {
+.eagr-reviews-skeleton-container:nth-child(3) {
   display: none; }
 
 .homes {

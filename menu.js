@@ -30,6 +30,9 @@ jQuery(function($) {
 
 		jQuery(function($) {
 			$(window).on('resize', refreshMediaQueries());
+
+			
+
 		});
 
 	
