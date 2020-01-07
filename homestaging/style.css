@@ -272,7 +272,7 @@ h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
   padding: 15rem 0vh;
-  color: rgba(0, 0, 0, 0.6);
+  color: black;
   width: 90%;
   -webkit-animation-delay: .2s;
   animation-delay: .2s;
@@ -358,10 +358,11 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 7%;
-  margin-bottom: 7%; }
+  padding-top: 15rem;
+  margin-bottom: 10rem; }
   .cards .cardWrap {
-    width: 45%; }
+    width: 28%;
+    position: relative; }
     .cards .cardWrap :hover {
       cursor: pointer;
       -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
@@ -395,12 +396,22 @@ h4 {
         transition: opacity 500ms ease 0s; }
     .cards .cardWrap .card .cardText {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
-      padding-bottom: 2%;
-      padding-left: 2%; }
+      padding-bottom: 4%;
+      padding-left: 4%; }
       .cards .cardWrap .card .cardText a {
         text-decoration: none;
         color: #2E425B;
         margin-bottom: 5%; }
+
+.cardText a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
 
 .ctaCards {
   margin-top: 10rem;
@@ -567,7 +578,9 @@ h4 {
   nav {
     font-size: 1.4rem; }
     nav .navRight {
-      width: 80%; } }
+      width: 80%; }
+  .cards .cardWrap .card .cardTile {
+    height: 20rem; } }
 
 @media (max-width: 1200px) {
   h3 {
@@ -582,6 +595,15 @@ h4 {
     line-height: 2.4rem; }
   #legal {
     display: none; } }
+
+@media (max-width: 1000px) {
+  .cards {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .cards .cardWrap {
+      width: 100%; }
+    .cards .cardWrap + .cardWrap {
+      margin-top: 5rem; } }
 
 @media (max-width: 800px) {
   .footerTop {
@@ -625,13 +647,6 @@ h4 {
       width: 100%; }
     .family .familyText {
       width: 84%; }
-  .cards {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .cards .cardWrap {
-      width: 100%; }
-    .cards .cardWrap + .cardWrap {
-      margin-top: 5rem; }
   .ctaCards .ctaCardWrap {
     width: 46%; } }
 

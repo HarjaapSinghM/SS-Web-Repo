@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    font: $baseFont;
+    
+    .navLinks {
+        display: flex;
+        align-items: center;
+        margin-right: 1%;
+        width: 77%;
+        justify-content: space-between;
+
+        a {
+            margin: 0% 3%;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .navRight {
+        display: flex;
+        justify-content: space-between;
+        width: 68%;
+    }
+}
+
+
+
+.CTA {
+    color: white;
+    font-family: $linkFont;
+    background-color: $primaryColour;
+    margin-top: 0.5rem;
+    border-radius: 0.8rem;
+    line-height: 4rem;
+    height: 4rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-top: 0.5rem; 
+}
