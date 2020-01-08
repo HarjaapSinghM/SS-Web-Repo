@@ -33,7 +33,8 @@
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding: 15rem 0vh;
+    padding-top: calc(10rem + 70px);
+    padding-bottom: 12rem;
     color: $secondaryColour;
    
     width: 90%;
@@ -166,13 +167,26 @@ h4 {
 
             .cardText {
                 font: $baseFont;
-                padding-bottom: 2%;
-                padding-left: 2%;
+                padding-bottom: 4%;
+                padding-left: 4%;
+
+                p {
+                    font-size: $baseFontSize * 1.1;
+                    line-height: $baseFontLineHeight * 1.1;
+                }
 
                 a {
                     text-decoration: none;
                     color: $primaryColour;
-                    margin-bottom: 5%;
+                    background-color: #2E425B;
+                    font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+                    color: white;
+                    display: inline-block;
+                    padding: 1.5rem 4rem;
+                    text-decoration: none;
+                    border-radius: 1rem;
+                    border: 1px solid white;
+                    white-space: nowrap;                   
                 }
             }
         }            
@@ -223,9 +237,13 @@ h4 {
     width: 33%;
 }
 
-// .eagr-reviews-layout-grid-classic.jsx-113350930 .eagr-reviews-layout-grid-item.jsx-11335093
 .eagr-reviews-skeleton-container.jsx-1570720278 {
     font: $baseFont;
+}
+
+.eagr-header-stats-component.jsx-781469832 {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .eagr-reviews-skeleton-container:nth-child(3) {
@@ -239,8 +257,7 @@ h4 {
     }
     
     .whiteoverlaybox {
-        background-image: linear-gradient(to top right, #f6f8facc, #f6f8facc),
-        url("../images/tourHomes.jpg");
+        background-image: linear-gradient(360deg, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
         height: 40rem;
         background-size: cover;
         background-position: center;
@@ -253,11 +270,12 @@ h4 {
             font: $baseFont;
             font-size: 3rem;
             // Line height has to be the same as height of div
-            padding-top: 18rem;
+            padding-top: 32rem;
             padding-bottom: 3rem;
             color: $primaryColour;
             text-align: center;
             margin: 0%;
+            line-height: 4.2rem;
             }
         
         .bigButton {
@@ -267,7 +285,8 @@ h4 {
             padding: 10px 22px;
             border-radius: 1rem;
             margin: 0 auto; 
-            color: #333333;
+            color :#2E425B;
+            border: 1px solid #2E425B;
             
             :hover {
                 background-color: $primaryColour;

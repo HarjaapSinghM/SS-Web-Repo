@@ -31,8 +31,29 @@
     #legal {
         display: none;
     }
+
+    .landingImage {
+        height: 60rem;
+    }
 }
 
+@media (max-width:1000px) {
+    .landingImage {
+        height: 50rem;
+    }
+
+    .cards .cardWrap .card .cardTile {
+        height: 23rem; 
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        width: 100%;
+        font-size: $headingFontSize * 0.8;
+        line-height: $headingLineHeight * 0.85;
+    }
+}
 @media (max-width: 800px) {
     .footerTop {
         margin-bottom: 5rem;
@@ -73,6 +94,10 @@
             order: 1;
         }
     }
+
+    .landingImage {
+        height: 40rem;
+    }
 }
 
 
@@ -80,13 +105,27 @@
 @media (max-width: 763px) {
     .family {
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 0rem;
 
         .familyPhoto {
             width: 100%;
         }
 
         .familyText {
-            width: 84%;
+            width: 90%;
+            margin: 1rem auto 6rem;
+            padding-left: 0%;
+            text-align: center;
+
+            h4 {
+                margin: 3rem auto 0rem;
+            }
+        }
+
+        .familyText .underlined::after {
+            margin: 0 auto;
+            margin-bottom: 1rem;
         }
     }
 
@@ -108,6 +147,10 @@
         .ctaCardWrap {
             width: 46%;
         }
+    }
+
+    .landingImage {
+        margin-bottom: 0rem;
     }
 }
 
@@ -155,4 +198,30 @@
             margin: 2rem 0rem;
         }
     }
+
+    h1 {
+        font-size: $headingFontSize * 0.6;
+        line-height: $headingLineHeight * 0.68;
+    }
+
+    .landingImage {
+        height: 30rem;
+    }
 }
+
+@media (max-width: 500px) {
+    .landingImage {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .landingImage {
+        height: 20rem;
+    }
+}
+// 600 and under
+//normal normal 500 4rem/5.5rem "Baskervville", serif
+
+//600 to 900
+//normal normal 500 5rem/6rem "Baskervville", serif

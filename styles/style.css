@@ -271,7 +271,8 @@ nav {
 h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
-  padding: 15rem 0vh;
+  padding-top: calc(10rem + 70px);
+  padding-bottom: 12rem;
   color: rgba(0, 0, 0, 0.6);
   width: 90%;
   -webkit-animation-delay: .2s;
@@ -395,12 +396,23 @@ h4 {
         transition: opacity 500ms ease 0s; }
     .cards .cardWrap .card .cardText {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
-      padding-bottom: 2%;
-      padding-left: 2%; }
+      padding-bottom: 4%;
+      padding-left: 4%; }
+      .cards .cardWrap .card .cardText p {
+        font-size: 1.76rem;
+        line-height: 2.2rem; }
       .cards .cardWrap .card .cardText a {
         text-decoration: none;
         color: #2E425B;
-        margin-bottom: 5%; }
+        background-color: #2E425B;
+        font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+        color: white;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        border: 1px solid white;
+        white-space: nowrap; }
 
 .ctaCards {
   margin-top: 10rem;
@@ -441,6 +453,10 @@ h4 {
 .eagr-reviews-skeleton-container.jsx-1570720278 {
   font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
 
+.eagr-header-stats-component.jsx-781469832 {
+  font-size: 1.4rem;
+  font-weight: bold; }
+
 .eagr-reviews-skeleton-container:nth-child(3) {
   display: none; }
 
@@ -449,10 +465,10 @@ h4 {
   .homes :hover {
     cursor: pointer; }
   .homes .whiteoverlaybox {
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#f6f8facc), to(#f6f8facc)), url("../images/tourHomes.jpg");
-    background-image: -webkit-linear-gradient(bottom left, #f6f8facc, #f6f8facc), url("../images/tourHomes.jpg");
-    background-image: -o-linear-gradient(bottom left, #f6f8facc, #f6f8facc), url("../images/tourHomes.jpg");
-    background-image: linear-gradient(to top right, #f6f8facc, #f6f8facc), url("../images/tourHomes.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(22.95%, #FFFFFF), color-stop(93.73%, rgba(255, 255, 255, 0))), url("../images/tourHomes.jpg");
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+    background-image: -o-linear-gradient(bottom, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+    background-image: linear-gradient(360deg, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
     height: 40rem;
     background-size: cover;
     background-position: center;
@@ -463,11 +479,12 @@ h4 {
     .homes .whiteoverlaybox .getaFeel {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       font-size: 3rem;
-      padding-top: 18rem;
+      padding-top: 32rem;
       padding-bottom: 3rem;
       color: #2E425B;
       text-align: center;
-      margin: 0%; }
+      margin: 0%;
+      line-height: 4.2rem; }
     .homes .whiteoverlaybox .bigButton {
       border: 0;
       font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
@@ -475,7 +492,8 @@ h4 {
       padding: 10px 22px;
       border-radius: 1rem;
       margin: 0 auto;
-      color: #333333; }
+      color: #2E425B;
+      border: 1px solid #2E425B; }
       .homes .whiteoverlaybox .bigButton :hover {
         background-color: #2E425B;
         color: white;
@@ -581,7 +599,21 @@ h4 {
     font-size: 1.68rem;
     line-height: 2.4rem; }
   #legal {
-    display: none; } }
+    display: none; }
+  .landingImage {
+    height: 60rem; } }
+
+@media (max-width: 1000px) {
+  .landingImage {
+    height: 50rem; }
+  .cards .cardWrap .card .cardTile {
+    height: 23rem; } }
+
+@media (max-width: 900px) {
+  h1 {
+    width: 100%;
+    font-size: 5.6rem;
+    line-height: 6.8rem; } }
 
 @media (max-width: 800px) {
   .footerTop {
@@ -615,16 +647,31 @@ h4 {
     .footerMain #navigation {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
-      order: 1; } }
+      order: 1; }
+  .landingImage {
+    height: 40rem; } }
 
 @media (max-width: 763px) {
   .family {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-top: 0rem; }
     .family .familyPhoto {
       width: 100%; }
     .family .familyText {
-      width: 84%; }
+      width: 90%;
+      margin: 1rem auto 6rem;
+      padding-left: 0%;
+      text-align: center; }
+      .family .familyText h4 {
+        margin: 3rem auto 0rem; }
+    .family .familyText .underlined::after {
+      margin: 0 auto;
+      margin-bottom: 1rem; }
   .cards {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -633,7 +680,9 @@ h4 {
     .cards .cardWrap + .cardWrap {
       margin-top: 5rem; }
   .ctaCards .ctaCardWrap {
-    width: 46%; } }
+    width: 46%; }
+  .landingImage {
+    margin-bottom: 0rem; } }
 
 @media (max-width: 600px) {
   .ctaCards {
@@ -665,4 +714,17 @@ h4 {
       width: 23%;
       margin: 0 auto; }
     .footerMain .footerSub + .footerSub {
-      margin: 2rem 0rem; } }
+      margin: 2rem 0rem; }
+  h1 {
+    font-size: 4.2rem;
+    line-height: 5.44rem; }
+  .landingImage {
+    height: 30rem; } }
+
+@media (max-width: 500px) {
+  .landingImage {
+    height: 25rem; } }
+
+@media (max-width: 400px) {
+  .landingImage {
+    height: 20rem; } }

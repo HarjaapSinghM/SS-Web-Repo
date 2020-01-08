@@ -47,6 +47,17 @@ ul{list-style:none;margin:0;padding:0;}
 .menu > li > a:hover,.submenu-active,#header-nav .menu-item > a.active{color:#c7c7c7!important;-moz-transition:color, 0.5s, ease-in-out;-webkit-transition:color, 0.5s, ease-in-out;transition:color, 0.5s, ease-in-out;}
 .menu  .sub-drop-icon{margin-left:5px;display:none}
 
+#header-nav #phone-number a {
+	color: #2E425B;
+	font-size: 1.6rem;
+	font-weight: 500; 
+}
+
+#header-nav #phone-number a:hover {
+	color: #2E425B;
+	cursor: default;
+}
+
 
 /* -- nav drop down menus -- */
 
@@ -131,6 +142,12 @@ ul{list-style:none;margin:0;padding:0;}
 		
 		#main-content,.medium-header-container,footer{transform:translate(0);-webkit-transition:.35s ease-in-out;transition:.35s ease-in-out;-moz-transition:.35s ease-in-out;-o-transition:.35s ease-in-out;}
 		
+		#header-nav #phone-number a {
+			color: #2E425B;
+			font-size: 1.6rem;
+			font-weight: 500; 
+			text-decoration: underline;
+		}
 }
 
 @media (min-width:768px) and (max-width: 1229px) {
