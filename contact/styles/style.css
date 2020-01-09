@@ -9,10 +9,6 @@ body {
 article, aside, footer, header, nav, section {
   display: block; }
 
-h1 {
-  font-size: 2em;
-  margin: .67em 0; }
-
 figcaption, figure, main {
   display: block; }
 
@@ -268,22 +264,6 @@ nav {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-h1 {
-  font: normal normal 500 7rem/8rem "Baskervville", serif;
-  margin: 0%;
-  padding-top: calc(10rem + 70px);
-  padding-bottom: 12rem;
-  color: rgba(0, 0, 0, 0.6);
-  width: 90%;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation: sweet-in 1s ease-out forwards;
-  animation: sweet-in 1s ease-out forwards; }
-  h1 span {
-    color: #2E425B; }
-
 h2 {
   font: normal normal 500 5rem/6rem "Baskervville", serif;
   margin: 6% 0%;
@@ -444,7 +424,7 @@ h4 {
       .ctaCards .ctaCardWrap .ctaCard a {
         text-decoration: none;
         color: #2E425B;
-        font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+        font: normal normal 500 2.4rem/3.2rem "Quicksand", sans-serif;
         text-transform: uppercase; }
 
 .eagr-reviews-layout-grid-item {
@@ -480,7 +460,7 @@ h4 {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       font-size: 3rem;
       padding-top: 32rem;
-      padding-bottom: 2rem;
+      padding-bottom: 3rem;
       color: #2E425B;
       text-align: center;
       margin: 0%;
@@ -488,30 +468,18 @@ h4 {
     .homes .whiteoverlaybox .bigButton {
       border: 0;
       font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
-      background-color: #2E425B;
+      background-color: white;
       padding: 10px 22px;
       border-radius: 1rem;
       margin: 0 auto;
-      color: white;
-      border: 1px solid #2E425B;
-      text-decoration: none; }
-
-.homes .whiteoverlaybox .bigButton:hover {
-  background-color: white;
-  color: #2E425B;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.bigButton span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  /* fixes overlap error in IE7/8, 
-        make sure you have an empty gif */ }
+      color: #2E425B;
+      border: 1px solid #2E425B; }
+      .homes .whiteoverlaybox .bigButton :hover {
+        background-color: #2E425B;
+        color: white;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
 
 .footerTop {
   display: -webkit-box;
@@ -738,9 +706,7 @@ h4 {
 
 @media (max-width: 500px) {
   .landingImage {
-    height: 25rem; }
-  .homes .whiteoverlaybox {
-    margin-bottom: 14rem; } }
+    height: 25rem; } }
 
 @media (max-width: 400px) {
   .landingImage {

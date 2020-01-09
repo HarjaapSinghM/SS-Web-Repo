@@ -1,0 +1,35 @@
+
+h1 {
+    font: $headingFont;
+    margin: 0%;
+    padding-top: calc(10rem + 70px);
+    padding-bottom: 12rem;
+    color: $secondaryColour;
+   
+    width: 90%;
+    span {
+        color: $primaryColour;
+    }
+}
+
+
+h2 {
+    font: $sectionHeadingFont;
+    margin: 2% 0%;
+    width: 80%;
+    color: $primaryColour;
+}
+
+h3 {
+    font: $sectionHeadingFont;
+    color: $primaryColour;
+}
+
+h4 {
+    font: $baseFont;
+}
+
+p {
+    font: $bodyFont;
+    color: $secondaryColour;
+}
