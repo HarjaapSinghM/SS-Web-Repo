@@ -6,6 +6,10 @@
         width: 80%;
         }
     }
+
+    .cards .cardWrap .card .cardTile {
+        height: 20rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -31,16 +35,14 @@
     #legal {
         display: none;
     }
+}
 
+@media (max-width: 1000px) {
     .cards {
         flex-wrap: wrap;
         
         .cardWrap {
             width: 100%;
-        
-            .cardTile {
-                height: 35rem;
-            }
         }
 
         .cardWrap + .cardWrap {
@@ -49,23 +51,7 @@
     
     }
 }
-
-@media (max-width: 1000px) {
-    .twoPhotos {
-        .pic {
-            height: 25rem;
-        }
-
-        .first  {
-            width: 100%;
-            margin: 0%;
-        }
-
-        .second {
-            display: none;
-        }
-    }
-
+@media (max-width: 800px) {
     .footerTop {
         margin-bottom: 5rem;
         flex-wrap: wrap;
@@ -86,50 +72,11 @@
 
     }
 
-    
-}
-@media (max-width: 900px) {
-    h1 {
-        font-size: 6rem;
-        line-height: 8rem
-    }
-    
-    .agentReco {
-        .reco {
-            font-size: $bodyFontSize * 0.8;
-            line-height: $bodyLineHeight * 0.8;
-        }
-
-        .agentAbout {
-            font-size: $bodyFontSize * 0.7;
-            line-height: $bodyLineHeight * 0.7;
-        }
-    
-        .agentImg {
-            img {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-        }
-
-        .leftText {
-            width: 70%;
-        }
-    }
-}
-
-@media (max-width: 800px) {
     .footerMain {
         flex-direction: row-reverse;
         flex-wrap: wrap;
         margin-bottom: 3rem;
 
-        // .logo {
-        //     img {
-        //         width: 35%;
-        //     }
-        // }
         .footerSub {
             text-align: center;
         }
@@ -142,29 +89,6 @@
 
         #navigation {
             order: 1;
-        }
-    }
-
-    .agentReco {
-        .agentImg {
-            display: none;
-        }
-
-        .leftText {
-            width: 87%;
-            padding-bottom: 3rem;
-        }
-    }
-
-    .accolades{
-        flex-wrap: wrap;
-
-        .acco {
-            width: 48%;  
-        }
-        
-        .bottom {
-            margin-top: 4rem;
         }
     }
 }
@@ -235,10 +159,5 @@
         .footerSub + .footerSub {
             margin: 2rem 0rem;
         }
-    }
-
-    h1 {
-        font-size: 4rem;
-        line-height: 6rem;
     }
 }

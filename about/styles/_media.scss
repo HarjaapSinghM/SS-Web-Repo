@@ -36,35 +36,25 @@
         height: 60rem;
     }
 
-    .threeCards {
+    .team .personContent {
         flex-wrap: wrap;
-        
-        .cardWrap {
-            width: 50%;
-        
-            .cardTile {
-                height: 35rem;
-            }
 
-            #award {
-                height: 15rem;
-                width: 100%;
-
-                p {
-                    padding-top: 0%;
-                }
-            }
-        }
-
-        .cardWrap.award {
+        .personPhoto {
             width: 100%;
-            order: 3;
-            margin-top: 5rem;
+            height: 52rem;
         }
-    
+
+        .personText {
+            width: 100%;
+            padding-left: 0rem;
+            margin-top: 2rem;
+
+            p {
+                text-align: center;
+            }
+        }
     }
 }
-
 
 @media (max-width:1000px) {
     .landingImage {
@@ -80,11 +70,6 @@
             font-size: $sectionHeadingFontSize * 0.6;
             line-height: $sectionHeadingLineHeight * 0.6;
         }
-    }
-
-    .threeCards .cardWrap #award p {
-        font-size: 3rem;
-        line-height: 5rem;
     }
 }
 
@@ -154,8 +139,13 @@
         }
     }
 
-    .landingImage {
+    .team .personContent .personPhoto {
         height: 40rem;
+    }
+
+    p {
+        font-size: $bodyFontSize * 0.85;
+        line-height: $bodyLineHeight * 1.16;
     }
 }
 
@@ -201,34 +191,19 @@
     
     }
 
-    .threeCards .cardWrap .cardTile {
-        height: 28rem;
-    }
-    
+    // .ctaCards {
+
+    //     .ctaCardWrap {
+    //         width: 46%;
+    //     }
+    // }
+
+    // .landingImage {
+    //     margin-bottom: 0rem;
+    // }
 }
 
-@media (max-width: 700px) {
-    .threeCards {
 
-        :nth-child(3) {
-            display: none;
-        }
-
-        .cardWrap {
-            width: 100%;
-        
-            .cardTile {
-                text-align: center;
-            }
-        }
-
-        .cardWrap #award p {
-            font-size: 2.5rem;
-            line-height: 4rem;
-        }
-
-    }
-}
 
 @media (max-width: 600px) {
     
@@ -270,6 +245,11 @@
     }
 
     
+    .team .personContent .personPhoto {
+        height: 30rem;
+    }
+
+    
 }
 
 @media (max-width: 500px) {
@@ -286,10 +266,9 @@
     .landingImage {
         height: 20rem;
     }
-    
-    .threeCards .cardWrap #award p {
-        padding-left: 3%;
-        padding-right: 3%;
+
+    .team .personContent .personPhoto {
+        height: 24rem;
     }
 }
 // 600 and under

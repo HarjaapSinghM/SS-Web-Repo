@@ -20,6 +20,18 @@ h4 {
     font: $baseFont;
 }
 
+.arrow {
+    float: right;
+    margin: 0.5rem 1.2rem;
+}
+
+.hider {
+    transition: all 0.3s ease;
+}
+.arrow:hover {
+    cursor: pointer;
+}
+
 .agentReco {
     display: flex;
     justify-content: space-between;
@@ -94,6 +106,17 @@ h4 {
             font: $baseFont;
             color: $primaryColour;
             font-weight: bold;
+        }
+
+        ul {
+            line-height: 2.5rem;
+            li:before {
+                content: '✓ ';
+            }
+
+            li + li {
+                margin-top: 1.5rem;
+            }
         }
     }
 }

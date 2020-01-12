@@ -22,10 +22,6 @@ html {
 // Typography
 $baseFontFamily: 'Quicksand', sans-serif;
 $headingFont: normal normal 500 7rem/8rem 'Baskervville', serif;
-$headingFontFamily: 'Baskervville', serif;
-$headingFontSize: 7rem;
-$headingLineHeight: 8rem;
-
 $subheadingFont: normal normal 500 5rem/6rem 'Baskervville', serif;
 $sectionHeadingFont: normal normal 500 4.3rem/6rem 'Baskervville', serif;
 $sectionHeadingFontSize: 4.3rem;
@@ -33,7 +29,6 @@ $sectionHeadingLineHeight: 6rem;
 
 $baseFont: normal normal 500 1.6rem/2rem 'Quicksand', sans-serif;
 $baseFontSize: 1.6rem;
-$baseFontLineHeight: 2rem;
 
 $ctaFont: normal normal 500 2.4rem/3.2rem 'Quicksand', sans-serif;
 
@@ -41,7 +36,7 @@ $bodyFont: normal normal 500 2.1rem/3rem 'Quicksand', sans-serif;
 $bodyFontSize: 2.1rem;
 $bodyLineHeight: 3rem;
 
-$linkFont: normal normal 500 1.6rem/2rem 'Quicksand', sans-serif;
+$linkFont: normal normal 500 1.6rem/2rem 'Open Sans', sans-serif;
 
 // Colours
 $primaryColour: #2E425B;

@@ -4,6 +4,18 @@
     opacity:0
 }
 
+// @-webkit-keyframes sweet-in {
+//     0% {
+//         opacity:0;
+//         -webkit-transform:translateY(40px);
+//         transform:translateY(40px)
+//     }
+//     to {
+//         opacity:1;
+//         -webkit-transform:translateY(0);
+//         transform:translateY(0)
+//     }
+// }
 
 @keyframes sweet-in {
     0% {
@@ -21,9 +33,8 @@
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding-top: calc(10rem + 70px);
-    padding-bottom: 12rem;
-    color: $secondaryColour;
+    padding: 15rem 0vh;
+    color: black;
    
     width: 90%;
     -webkit-animation-delay: .2s;
@@ -116,11 +127,12 @@ h4 {
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 7%;
-    margin-bottom: 7%;
-
+    padding-top: 15rem;
+    margin-bottom: 10rem;
+    
     .cardWrap {
-        width: 45%;
+        width: 28%;
+        position: relative;
 
         :hover {
             cursor: pointer;
@@ -158,110 +170,34 @@ h4 {
                 padding-bottom: 4%;
                 padding-left: 4%;
 
-                p {
-                    font-size: $baseFontSize * 1.1;
-                    line-height: $baseFontLineHeight * 1.1;
-                }
-
                 a {
                     text-decoration: none;
                     color: $primaryColour;
-                    background-color: #2E425B;
-                    font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
-                    color: white;
-                    display: inline-block;
-                    padding: 1.5rem 4rem;
-                    text-decoration: none;
-                    border-radius: 1rem;
-                    border: 1px solid white;
-                    white-space: nowrap;                   
+                    margin-bottom: 5%;
                 }
             }
         }            
     }
 }
 
-.sectionHeading {
-    text-align: center;
-    font: $sectionHeadingFont;
-    color: $primaryColour;
-    margin: 5rem 0 2rem 0;
-}
+.cardText a span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
 
-.headingUnderline {
-    width: 9rem;
-    height: 0px;
-    border: 2px solid #C89AA4;
-    margin: 0 auto;
-}
+    z-index: 1;
 
-.threeCards {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-    margin-bottom: 7%;
-
-    .cardWrap {
-        width: 30%;
-        
-        .cardTile {
-            height: 30rem;
-            overflow: hidden;
-            position: relative;
-            border-radius: 1rem 1rem 0rem 0rem;
-            
-            img {
-                width: 100%;
-                max-width: 100%;
-                display: block;
-                position: absolute; 
-                top: 0px; 
-                left: 0px; 
-                height: 100%; 
-                object-fit: contain; 
-                object-position: center center; 
-                opacity: 1; 
-                transition: opacity 500ms ease 0s;
-            }
-        }
-
-        #award {
-            background-image: url(../images/marble2.jpg) ;
-            display: table;
-            p {
-                font-family: $headingFontFamily;
-                font-size: 3.5rem;
-                color: #2e425b;
-                text-align: center;
-                line-height: 7rem;
-                font-weight: 300;
-                vertical-align: middle; 
-                padding-left: 1%;
-                padding-right: 2%;
-                // padding: 2rem;
-                display: table-cell;
-            }
-        }
-
-        // .cardText {
-        //     font: $baseFont;
-        //     padding-bottom: 2%;
-        //     padding-left: 2%;
-            
-        //     .heading {
-        //         font: $bodyFont;
-        //         font-size: $bodyFontSize * 0.85;
-        //         line-height: $bodyLineHeight * 0.85;
-        //     }
-        // }
-    }            
-}
-
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    // background-image: url('empty.gif');
+} 
 .ctaCards {
     margin-top: 10rem;
     margin-bottom: 10rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
     .ctaCardWrap {
     width: 40%;
@@ -282,36 +218,16 @@ h4 {
             p {
                 font: $baseFont;
                 color: $secondaryColour;
-                width: 90%;
+                width: 65%;
             }
             a {
                 text-decoration: none;
                 color: $primaryColour;
-                font: $sectionHeadingFont;
-                font-size: $sectionHeadingFontSize * 0.7;
-                line-height: $sectionHeadingLineHeight * 0.7;
-                text-transform: capitalize;
-                position: relative;
+                font: $ctaFont;
+                text-transform: uppercase;
 
-                span {
-                    position:absolute; 
-                    width:100%;
-                    height:100%;
-                    top:0;
-                    left: 0;
-                
-                    z-index: 1;
-                
-                    /* fixes overlap error in IE7/8, 
-                        make sure you have an empty gif */
-                    // background-image: url('empty.gif');
-                }
             }
-
-            i {
-                font-size: 2rem;
-            }
-          
+            
         }
     }
 }
@@ -321,13 +237,9 @@ h4 {
     width: 33%;
 }
 
+// .eagr-reviews-layout-grid-classic.jsx-113350930 .eagr-reviews-layout-grid-item.jsx-11335093
 .eagr-reviews-skeleton-container.jsx-1570720278 {
     font: $baseFont;
-}
-
-.eagr-header-stats-component.jsx-781469832 {
-    font-size: 1.4rem;
-    font-weight: bold;
 }
 
 .eagr-reviews-skeleton-container:nth-child(3) {
@@ -341,7 +253,8 @@ h4 {
     }
     
     .whiteoverlaybox {
-        background-image: linear-gradient(360deg, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+        background-image: linear-gradient(to top right, #f6f8facc, #f6f8facc),
+        url("../images/tourHomes.jpg");
         height: 40rem;
         background-size: cover;
         background-position: center;
@@ -354,45 +267,28 @@ h4 {
             font: $baseFont;
             font-size: 3rem;
             // Line height has to be the same as height of div
-            padding-top: 32rem;
-            padding-bottom: 2rem;
+            padding-top: 18rem;
+            padding-bottom: 3rem;
             color: $primaryColour;
             text-align: center;
             margin: 0%;
-            line-height: 4.2rem;
-            // display: block;
             }
         
         .bigButton {
             border: 0;
             font: $linkFont;
-            background-color:$primaryColour;
+            background-color: white;
             padding: 10px 22px;
             border-radius: 1rem;
             margin: 0 auto; 
-            color :white;
-            border: 1px solid #2E425B;  
-            text-decoration: none;      
+            color: #333333;
+            
+            :hover {
+                background-color: $primaryColour;
+                color: white;
+                transition: all 0.3s ease;
+            }
+        
         }    
     }
 }
-
-.homes .whiteoverlaybox .bigButton:hover {
-    background-color: white;
-    color: $primaryColour;
-    transition: all 0.3s ease;
-}
-
-.bigButton span {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-
-    z-index: 1;
-
-    /* fixes overlap error in IE7/8, 
-        make sure you have an empty gif */
-    // background-image: url('empty.gif');
-} 
