@@ -8,6 +8,6 @@ $(function() {
         linksToGoogle.css("display","none");
      };
 
-     setTimeout(sample, 3000);
+     setTimeout(sample, 4000);
 
 });
