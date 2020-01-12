@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,7 +234,7 @@ nav {
 
 .CTA {
   color: white;
-  font-family: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+  font-family: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
   background-color: #2E425B;
   margin-top: 0.5rem;
   border-radius: 0.8rem;
@@ -357,7 +356,7 @@ h4 {
     transition: all 0.3s ease; }
   .quoteCTA a {
     background-color: #2E425B;
-    font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+    font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
     color: white;
     display: inline-block;
     padding: 1.5rem 10rem;
@@ -383,11 +382,17 @@ h4 {
       width: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
+  .twoPhotos .pic.top {
+    -o-object-position: top;
+    object-position: top; }
   .twoPhotos .first {
     width: calc(65% - 5rem);
     margin-right: 5rem; }
   .twoPhotos .second {
     width: 35%; }
+
+.twoPhotos.tall .pic {
+  height: 48rem; }
 
 .cards {
   display: -webkit-box;
@@ -637,10 +642,14 @@ body {
   z-index: 15; }
 
 @media (min-width: 768px) {
+  .timeline:before {
+    position: absolute;
+    left: 0%; }
   .timeline {
     width: 660px;
     margin: 0 auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 10rem; }
   .timeline li:after {
     content: "";
     display: block;
@@ -661,9 +670,10 @@ body {
     text-align: right; }
   .direction-r {
     position: relative;
-    width: 310px;
-    float: right;
-    text-align: left; }
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 20px; }
   .flag-wrapper {
     display: inline-block; }
   .flag {
@@ -698,7 +708,8 @@ body {
   .timeline {
     width: 800px;
     margin: 0 auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 10rem; }
   .direction-l {
     position: relative;
     width: 380px;
@@ -706,9 +717,10 @@ body {
     text-align: right; }
   .direction-r {
     position: relative;
-    width: 380px;
-    float: right;
-    text-align: left; } }
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 20px; } }
 
 .faq {
   margin-bottom: 10rem; }
@@ -792,7 +804,7 @@ body {
       margin-top: 0%;
       padding-bottom: 3%; }
     .footerTop .callCTA .number {
-      font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       color: white;
       font-weight: 600;
       font-size: 2.3rem;
@@ -806,8 +818,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 5%; }
-  .footerMain .logo {
-    text-align: center; }
   .footerMain .footerSub {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -834,15 +844,18 @@ body {
       -ms-flex-pack: justify;
       justify-content: space-between;
       font-size: 3.5rem; }
+      .footerMain .footerSub .social a + a {
+        margin-left: 1.5rem; }
     .footerMain .footerSub a {
       text-decoration: none;
       color: rgba(0, 0, 0, 0.6);
       margin-bottom: 2.6rem; }
-      .footerMain .footerSub a :hover {
-        color: black;
-        -webkit-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
+
+.footerMain .footerSub a:hover {
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 @media (max-width: 1442px) {
   nav {
@@ -871,15 +884,24 @@ body {
       .cards .cardWrap .cardTile {
         height: 35rem; }
     .cards .cardWrap + .cardWrap {
-      margin-top: 5rem; } }
+      margin-top: 5rem; }
+  .twoPhotos.tall .pic {
+    height: 40rem; } }
 
 @media (max-width: 1000px) {
   .twoPhotos .pic {
-    height: 25rem; }
+    height: 30rem; }
   .twoPhotos .first {
     width: 100%;
     margin: 0%; }
   .twoPhotos .second {
+    display: none; }
+  .twoPhotos.tall .pic {
+    height: 30rem; }
+  .twoPhotos.tall .first {
+    width: 100%;
+    margin: 0%; }
+  .twoPhotos.tall .second {
     display: none; }
   .footerTop {
     margin-bottom: 5rem;
@@ -954,7 +976,11 @@ body {
     .family .familyText {
       width: 84%; }
   .ctaCards .ctaCardWrap {
-    width: 46%; } }
+    width: 46%; }
+  .twoPhotos .pic {
+    height: 22rem; }
+  .twoPhotos.tall .pic {
+    height: 22rem; } }
 
 @media (max-width: 600px) {
   .ctaCards {
@@ -989,4 +1015,14 @@ body {
       margin: 2rem 0rem; }
   h1 {
     font-size: 4rem;
-    line-height: 6rem; } }
+    line-height: 6rem; }
+  .twoPhotos .pic {
+    height: 17rem; }
+  .twoPhotos.tall .pic {
+    height: 22rem; } }
+
+@media (max-width: 400px) {
+  .accolades .acco {
+    width: 100%; }
+  .accolades .acco + .acco {
+    margin-top: 4rem; } }

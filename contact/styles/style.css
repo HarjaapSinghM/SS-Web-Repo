@@ -9,6 +9,10 @@ body {
 article, aside, footer, header, nav, section {
   display: block; }
 
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
 figcaption, figure, main {
   display: block; }
 
@@ -229,7 +233,7 @@ nav {
 
 .CTA {
   color: white;
-  font-family: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+  font-family: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
   background-color: #2E425B;
   margin-top: 0.5rem;
   border-radius: 0.8rem;
@@ -263,6 +267,18 @@ nav {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+.onePhoto {
+  width: 100%;
+  position: relative;
+  height: 35rem;
+  width: 100%; }
+  .onePhoto img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 h2 {
   font: normal normal 500 5rem/6rem "Baskervville", serif;
@@ -467,7 +483,7 @@ h4 {
       line-height: 4.2rem; }
     .homes .whiteoverlaybox .bigButton {
       border: 0;
-      font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       background-color: white;
       padding: 10px 22px;
       border-radius: 1rem;
@@ -511,7 +527,7 @@ h4 {
       margin-top: 0%;
       padding-bottom: 3%; }
     .footerTop .callCTA .number {
-      font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       color: white;
       font-weight: 600;
       font-size: 2.3rem;

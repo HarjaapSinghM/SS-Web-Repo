@@ -1,3 +1,82 @@
+HTML
+
+ <ul class="timeline">
+                    <!-- Item 1 -->
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">Consultation</span>
+                                <span class="time-wrapper"><span class="time">Establish a Vision</span></span>
+                            </div>
+                            <div class="desc">Based on the details of your project, budget and timeline, our designer will provide you with their vision and ideas on how to beautifully prepare your listing.</div>
+                        </div>
+                    </li>
+                  
+                    <!-- Item 2 -->
+                    <li>
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <span class="flag">Site Visit</span>
+                          <span class="time-wrapper"><span class="time">Details, Details</span></span>
+                        </div>
+                        <div class="desc">Our team can meet you at the property to discuss details and provide recommendations or, if you'd prefer, we can connect with the sellers directly as an extension of your team.</div>
+                      </div>
+                    </li>
+                  
+                    <!-- Item 3 -->
+                    <li>
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <span class="flag">Preparation</span>
+                          <span class="time-wrapper"><span class="time">The Secret Sauce</span></span>
+                        </div>
+                        <div class="desc">Our team will take away all the information and use their years of professional experience to build floor plans, hand pick all the furniture down to the smallest accent to be used to set-up your listing. </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <span class="flag">Staging (Set-Up)</span>
+                          <span class="time-wrapper"><span class="time">The Wow! Day</span></span>
+                        </div>
+                        <div class="desc">Within a day, our team will transform your listing to a buyer's dream. We will set-up everything for you and have it ready for the photo-shoot. </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                        <div class="direction-r">
+                          <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">Destage (Removal)</span>
+                            <span class="time-wrapper"><span class="time">You did it!</span></span>
+                          </div>
+                          <div class="desc">Within a day, our team will transform your listing to a buyer's dream. We will set-up everything for you and have it ready for the photo-shoot. </div>
+                        </div>
+                      </li>
+                     <!-- <li>
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <span class="flag">Destage (Removal)</span>
+                          <span class="time-wrapper"><span class="time"> - Pop the Champagne</span></span>
+                        </div>
+                        <div class="desc">Within a day, our team will transform your listing to a buyer's dream. We will set-up everything for you and have it ready for the photo-shoot. </div>
+                      </div>
+                    </li> -->
+                  
+                  </ul>
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 
 body{
   font: $bodyFont;
@@ -195,16 +274,10 @@ body{
 }
 
 @media(min-width: 768px){
-  .timeline:before {
-    position: absolute;
-    left: 0%;
-  }
-
   .timeline {
     width: 660px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 10rem;
   }
 
   .timeline li:after {
@@ -235,10 +308,9 @@ body{
 
   .direction-r {
     position: relative;
-    width: 100%;
-    float: left;
+    width: 310px;
+    float: right;
     text-align: left;
-    margin-left: 20px;
   }
 
   .flag-wrapper {
@@ -292,16 +364,10 @@ body{
 }
 
 @media(min-width: 992px){
-  // .timeline:before {
-  //   position: absolute;
-  //   left: 0%;
-  // }
-
   .timeline {
     width: 800px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 10rem;
   }
 
   .direction-l {
@@ -313,9 +379,8 @@ body{
 
   .direction-r {
     position: relative;
-    width: 100%;
-    float: left;
+    width: 380px;
+    float: right;
     text-align: left;
-    margin-left: 20px;
   }
 }
