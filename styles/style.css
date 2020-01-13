@@ -362,6 +362,7 @@ h4 {
   margin-top: 7%;
   margin-bottom: 7%; }
   .cards .cardWrap {
+    position: relative;
     width: 45%; }
     .cards .cardWrap :hover {
       cursor: pointer;
@@ -482,7 +483,8 @@ h4 {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   .ctaCards .ctaCardWrap {
-    width: 40%; }
+    width: 40%;
+    position: relative; }
     .ctaCards .ctaCardWrap :hover {
       -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
       box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
@@ -491,6 +493,7 @@ h4 {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .ctaCards .ctaCardWrap .ctaCard {
+      position: relative;
       padding: 4%; }
       .ctaCards .ctaCardWrap .ctaCard :hover {
         -webkit-box-shadow: none;
@@ -507,17 +510,38 @@ h4 {
         line-height: 4.2rem;
         text-transform: capitalize;
         position: relative; }
-        .ctaCards .ctaCardWrap .ctaCard a span {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          /* fixes overlap error in IE7/8, 
-                        make sure you have an empty gif */ }
       .ctaCards .ctaCardWrap .ctaCard i {
         font-size: 2rem; }
+
+.ctaCards .ctaCardWrap .ctaCard a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.cards .cardWrap .cardText a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.ctaCard a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
 
 .eagr-reviews-layout-grid-item {
   width: 33%; }
