@@ -109,6 +109,17 @@ h4 {
             color: $primaryColour;
             font-weight: bold;
         }
+
+        ul {
+            line-height: 2.5rem;
+            li:before {
+                content: '✓ ';
+            }
+
+            li + li {
+                margin-top: 1.5rem;
+            }
+        }
     }
 }
 

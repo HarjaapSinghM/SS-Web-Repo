@@ -250,3 +250,16 @@
         line-height: 6rem;
     }
 }
+
+@media (max-width: 400px) {
+    .accolades{
+
+        .acco {
+            width: 100%;  
+        }
+        
+        .acco + .acco {
+            margin-top: 4rem;
+        }
+    }
+}

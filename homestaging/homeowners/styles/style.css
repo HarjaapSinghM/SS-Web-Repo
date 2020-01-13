@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -332,6 +333,12 @@ h4 {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       color: #2E425B;
       font-weight: bold; }
+    .accolades .acco ul {
+      line-height: 2.5rem; }
+      .accolades .acco ul li:before {
+        content: '✓ '; }
+      .accolades .acco ul li + li {
+        margin-top: 1.5rem; }
 
 .quoteCTA {
   text-align: center;
@@ -992,3 +999,9 @@ body {
   h1 {
     font-size: 4rem;
     line-height: 6rem; } }
+
+@media (max-width: 400px) {
+  .accolades .acco {
+    width: 100%; }
+  .accolades .acco + .acco {
+    margin-top: 4rem; } }
