@@ -406,7 +406,7 @@ h4 {
   .cards .cardWrap {
     width: 30%; }
     .cards .cardWrap .cardTile {
-      height: 20rem;
+      height: 30rem;
       overflow: hidden;
       position: relative;
       border-radius: 1rem 1rem 0rem 0rem; }
@@ -418,8 +418,8 @@ h4 {
         top: 0px;
         left: 0px;
         height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: contain;
+        object-fit: contain;
         -o-object-position: center center;
         object-position: center center;
         opacity: 1;

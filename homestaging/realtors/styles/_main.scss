@@ -193,7 +193,7 @@ h4 {
         width: 30%;
         
         .cardTile {
-            height: 20rem;
+            height: 30rem;
             overflow: hidden;
             position: relative;
             border-radius: 1rem 1rem 0rem 0rem;
@@ -206,7 +206,7 @@ h4 {
                 top: 0px; 
                 left: 0px; 
                 height: 100%; 
-                object-fit: cover; 
+                object-fit: contain; 
                 object-position: center center; 
                 opacity: 1; 
                 transition: opacity 500ms ease 0s;
