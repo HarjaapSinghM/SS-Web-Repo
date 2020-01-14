@@ -434,6 +434,14 @@ h4 {
         font: normal normal 500 2.1rem/3rem "Quicksand", sans-serif;
         font-size: 1.785rem;
         line-height: 2.55rem; }
+      .cards .cardWrap .cardText ul {
+        line-height: 2.5rem; }
+        .cards .cardWrap .cardText ul li:before {
+          content: '✓ '; }
+        .cards .cardWrap .cardText ul #price:before {
+          content: ' '; }
+        .cards .cardWrap .cardText ul li + li {
+          margin-top: 1.5rem; }
 
 .cards ul {
   margin-bottom: 2rem; }

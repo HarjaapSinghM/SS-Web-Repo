@@ -223,6 +223,22 @@ h4 {
                 font-size: $bodyFontSize * 0.85;
                 line-height: $bodyLineHeight * 0.85;
             }
+
+            ul {
+                line-height: 2.5rem;
+
+                li:before {
+                    content: '✓ ';
+                }
+                
+                #price:before {
+                    content: ' ';
+                }
+
+                li + li {
+                    margin-top: 1.5rem;
+                }
+            }
         }
     }            
 }
