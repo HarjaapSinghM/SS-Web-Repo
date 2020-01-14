@@ -328,7 +328,7 @@ h4 {
     color: #2E425B;
     width: 23%; }
     .accolades .acco i {
-      font-size: 3rem; }
+      font-size: 5rem; }
     .accolades .acco h4 {
       font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
       color: #2E425B;
@@ -409,8 +409,8 @@ h4 {
         top: 0px;
         left: 0px;
         height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: contain;
+        object-fit: contain;
         -o-object-position: center center;
         object-position: center center;
         opacity: 1;
@@ -423,8 +423,20 @@ h4 {
       padding-left: 2%; }
       .cards .cardWrap .cardText .heading {
         font: normal normal 500 2.1rem/3rem "Quicksand", sans-serif;
+        color: #2E425B;
         font-size: 1.785rem;
-        line-height: 2.55rem; }
+        line-height: 2.55rem;
+        margin-bottom: 0px; }
+      .cards .cardWrap .cardText ul {
+        line-height: 2.5rem; }
+        .cards .cardWrap .cardText ul li:before {
+          content: '✓ '; }
+        .cards .cardWrap .cardText ul #price {
+          margin-bottom: 2rem; }
+        .cards .cardWrap .cardText ul #price:before {
+          content: ' '; }
+        .cards .cardWrap .cardText ul li + li {
+          margin-top: 1.5rem; }
 
 .cards ul {
   margin-bottom: 2rem; }
