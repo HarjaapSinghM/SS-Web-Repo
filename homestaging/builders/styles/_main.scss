@@ -1,7 +1,8 @@
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding: 15vh 0vh;
+    padding-top: calc(10rem + 70px);
+    padding-bottom: 12rem;
     color: $primaryColour;
 }
 
@@ -102,12 +103,23 @@ h4 {
         width: 23%;
 
         i {
-            font-size: 3rem;
+            font-size: 5rem;
         }
         h4 {
             font: $baseFont;
             color: $primaryColour;
             font-weight: bold;
+        }
+
+        ul {
+            line-height: 2.5rem;
+            li:before {
+                content: '✓ ';
+            }
+
+            li + li {
+                margin-top: 1.5rem;
+            }
         }
     }
 }
@@ -193,7 +205,7 @@ h4 {
                 top: 0px; 
                 left: 0px; 
                 height: 100%; 
-                object-fit: cover; 
+                object-fit: contain; 
                 object-position: center center; 
                 opacity: 1; 
                 transition: opacity 500ms ease 0s;
@@ -209,6 +221,26 @@ h4 {
                 font: $bodyFont;
                 font-size: $bodyFontSize * 0.85;
                 line-height: $bodyLineHeight * 0.85;
+            }
+
+            ul {
+                line-height: 2.5rem;
+
+                li:before {
+                    content: '✓ ';
+                }
+                
+                #price {
+                    margin-bottom: 2rem;
+                }
+
+                #price:before {
+                    content: ' ';
+                }
+
+                li + li {
+                    margin-top: 1.5rem;
+                }
             }
         }
     }            

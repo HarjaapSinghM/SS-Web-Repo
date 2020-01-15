@@ -1,7 +1,8 @@
 h1 {
     font: $headingFont;
     margin: 0%;
-    padding: 15vh 0vh;
+    padding-top: calc(10rem + 70px);
+    padding-bottom: 12rem;    
     color: $primaryColour;
 }
 

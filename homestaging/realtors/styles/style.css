@@ -247,7 +247,8 @@ nav {
 h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
-  padding: 15vh 0vh;
+  padding-top: calc(10rem + 70px);
+  padding-bottom: 12rem;
   color: #2E425B; }
 
 h2 {

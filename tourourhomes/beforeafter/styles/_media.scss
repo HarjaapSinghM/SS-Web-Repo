@@ -190,6 +190,9 @@
         .pic {
             width: 100%;
             height: 30rem;
+        }
+
+        .pic + .pic {
             margin-top: 5rem;
         }
     }
@@ -241,8 +244,8 @@
     }
 
     h1 {
-        font-size: 5rem;
-        line-height: 7rem;
+        font-size: 4rem;
+        line-height: 6rem;
     }
 }
 
