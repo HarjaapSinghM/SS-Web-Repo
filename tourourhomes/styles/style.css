@@ -419,11 +419,11 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
   .ctaCards .ctaCardWrap {
-    width: 40%; }
+    width: 40%;
+    position: relative; }
     .ctaCards .ctaCardWrap :hover {
       -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
       box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
@@ -432,6 +432,7 @@ h4 {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .ctaCards .ctaCardWrap .ctaCard {
+      position: relative;
       padding: 4%; }
       .ctaCards .ctaCardWrap .ctaCard :hover {
         -webkit-box-shadow: none;
@@ -439,12 +440,17 @@ h4 {
       .ctaCards .ctaCardWrap .ctaCard p {
         font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
         color: rgba(0, 0, 0, 0.6);
-        width: 65%; }
+        width: 90%; }
       .ctaCards .ctaCardWrap .ctaCard a {
         text-decoration: none;
         color: #2E425B;
-        font: normal normal 500 2.4rem/3.2rem "Quicksand", sans-serif;
-        text-transform: uppercase; }
+        font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+        font-size: 3.01rem;
+        line-height: 4.2rem;
+        text-transform: capitalize;
+        position: relative; }
+      .ctaCards .ctaCardWrap .ctaCard i {
+        font-size: 2rem; }
 
 .eagr-reviews-layout-grid-item {
   width: 33%; }
@@ -676,7 +682,7 @@ h4 {
     .footerMain .footerSub a {
       margin-bottom: 1.5rem; }
     .footerMain .footerSub .social {
-      width: 23%;
+      width: 15rem;
       margin: 0 auto; }
     .footerMain .footerSub + .footerSub {
       margin: 2rem 0rem; } }

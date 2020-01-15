@@ -45,9 +45,25 @@ ul{list-style:none;margin:0;padding:0;}
 
 .font-reg{font-family: 'Questrial', sans-serif;font-weight:400;}
 
-.primary-button{font-size:14px;line-height:15px;color:#ffffff;display:inline-block;border:none;padding:14px 27px 13px;background-color:#111111;letter-spacing:3px;text-transform:uppercase;text-decoration:none;cursor:pointer;}
-.primary-button:hover{background-color:#c7c7c7;color:#ffffff;}
+.primary-button{
+    font-size:14px;
+    line-height:15px;
+    color:#ffffff;
+    display:inline-block;
+    border:1px solid $primaryColour;
+    padding:14px 27px 13px;
+    background-color: $primaryColour;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    text-decoration:none;
+}
 
+.primary-button:hover{ 
+    background-color: white;
+    color:$primaryColour;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
 .secondary-button{font-size:14px;line-height:15px;color:#222222;display:inline-block;padding:12px 25px 11px;border:2px solid #111111;background-color:transparent;letter-spacing:3px;text-transform:uppercase;text-decoration:none;cursor:pointer;}
 .secondary-button:hover{background-color:#222222;color:#ffffff;border-color:#222222;}
 
@@ -132,27 +148,27 @@ ul{list-style:none;margin:0;padding:0;}
 
 
 /* -- 4.3) post share -- */
-
+/* 
 #post-share{margin-top:30px;}
-#post-share .social-item:first-child {margin-left: 0;}
+#post-share .social-item:first-child {margin-left: 0;} */
 
 
 /* -- 4.4) post navigation -- */
-
+/* 
 .post-navigation-inner{padding:50px 0;margin-top:60px;border-top:1px solid #eeeeee;text-align:center;}
 .post-navigation-inner .fa{font-size:20px;color:#afafaf;line-height:20px;}
 .post-navigation-inner .fa-th-large,.post-navigation-inner .fa-long-arrow-right{margin-left:20px;}
-.post-navigation-inner .fa:hover{color:#111111;}
+.post-navigation-inner .fa:hover{color:#111111;} */
 
 
 /* -- 4.5) sidebar widgets -- */
 
-.left-sidebar{padding-right:40px}
+/* .left-sidebar{padding-right:40px}
 .right-sidebar{padding-left:40px}
 
 .sidebar-widget{margin-bottom:60px;}
 .post-sidebar .sidebar-widget:last-child{margin-bottom:0;}
-.sidebar-widget h3{font-size:18px;color:#111111;line-height:24px;text-transform:uppercase;letter-spacing:4px;margin-bottom:15px;font-weight:400;}
+.sidebar-widget h3{font-size:18px;color:#111111;line-height:24px;text-transform:uppercase;letter-spacing:4px;margin-bottom:15px;font-weight:400;} */
 
 
 /* -- 4.6) posts widget  -- */
@@ -228,7 +244,7 @@ ul{list-style:none;margin:0;padding:0;}
 
 /* -- about items  -- */
 
-.about-item{text-align:center;margin-top:40px;}
+/* .about-item{text-align:center;margin-top:40px;}
 .about-items li:nth-child(-n+3) .about-item{margin-top:0;}
 .about-item .fa{font-size:35px;color:#111111;margin-bottom:15px;}
 .about-item h3{font-size:16px;color:#111111;line-height:22px;letter-spacing:4px;margin-bottom:10px;font-weight:400;text-transform:uppercase;}
@@ -237,7 +253,7 @@ ul{list-style:none;margin:0;padding:0;}
 
 
 /* -- team section -- */
-
+/* 
 .team-section-inner{padding:100px 0;border-top:1px solid #eeeeee;}
 
 .team-item{position:relative;margin-top:40px;}
@@ -255,10 +271,10 @@ ul{list-style:none;margin:0;padding:0;}
 
 .team-item:hover .team-hover{opacity:1;}
 .team-item:hover .team-hover-content{top:50%;}
-
+ */
 
 /* -- testimonial section  -- */
-
+/* 
 .testimonial-section-inner{padding:100px 0;border-top:1px solid #eeeeee;}
 
 #testimonial-slideshow{position:relative;padding-bottom:40px;}
@@ -267,11 +283,11 @@ ul{list-style:none;margin:0;padding:0;}
 .testimonial-slide p:first-child{font-size:13px;line-height:19px;letter-spacing:1px;}
 .testimonial-slide p:last-child{font-size:15px;line-height:21px;letter-spacing:1.5px;margin-top:30px;}
 .testimonial-slide .company{color:#c7c7c7;}
-
+ */
 
 
 /* --- 7) PORTFOLIO PAGE  --- */
-
+/* 
 .portfolio-section .row{margin:0;}
 
 #portfolio-item-filter{margin-bottom:58px;text-align:center;}
@@ -295,37 +311,45 @@ ul{list-style:none;margin:0;padding:0;}
 .portfolio-item:hover .portfolio-hover{opacity:1;}
 .portfolio-item:hover .portfolio-hover-content{top:50%;}
 
-
+ */
 
 /* --- 8) BLOG POSTS PAGE --- */
-
+/* 
 .blog-item{text-decoration:none;color:#525252;display:block;border-top:1px solid #eeeeee;padding-top:50px;}
 .blog-item h3{font-size:22px;line-height:22px;letter-spacing:4px;margin-bottom:10px;font-weight:400;text-transform:uppercase;text-align:center;}
 .blog-item > p{font-size:13px;line-height:19px;letter-spacing:1.5px;text-align:center;}
 .blog-item > p:after{width:40px;height:1px;display:block;background-color:#111111;content:"";margin:20px auto 20px;}
 .blog-item img{margin-bottom:20px;}
-
+ */
 
 /* -- 8.1) style one & two -- */
-
+/* 
 .blog-list-1 .blog-item,.blog-list-2 .blog-item{margin-bottom:50px}
 .blog-list-1 li:first-child .blog-item,.blog-list-2 li:first-child .blog-item{padding-top:0;border:0;}
-.blog-list-1 li:last-child .blog-item,.blog-list-2 li:last-child .blog-item{margin-bottom:0}
+.blog-list-1 li:last-child .blog-item,.blog-list-2 li:last-child .blog-item{margin-bottom:0} */
 
 
 /* -- 8.2) style three -- */
 
-.blog-list-3 {padding-bottom:50px;}
+/* .blog-list-3 {padding-bottom:50px;}
 .blog-list-3 .blog-item{margin-bottom:50px;}
 .blog-list-3 li:nth-child(-n+2) .blog-item{padding-top:0;border:0;}
-
+  */
 
 
 /* --- 9) CONTACT PAGE --- */
 
 #contact-map-container,#contact-map{width:100%;height:450px;}
 
-.contact-page h1{font-size:28px;color:#111111;line-height:34px;text-transform:uppercase;letter-spacing:5px;margin-bottom:25px;}
+.contact-page h1{
+	font: $headingFont;
+	font-size: 2.8rem;
+	color: $primaryColour;
+	line-height:3.4rem;
+	text-transform: uppercase;
+	letter-spacing:5px;
+	margin-bottom:2.5rem;
+}
 
 #contact-details{width:100%;}
 #contact-details tr{padding:15px 0;border-bottom:1px solid #eeeeee;display:block;}
@@ -346,7 +370,7 @@ ul{list-style:none;margin:0;padding:0;}
 
 /* -- 10.1) portfolio single -- */
 
-.single-portfolio{padding-bottom:0;}
+/* .single-portfolio{padding-bottom:0;}
 
 #portfolio-slideshow-outer{position:relative;margin-bottom:40px;}
 #portfolio-slideshow-outer:hover .slideshow-btn{opacity:1;}
@@ -361,13 +385,13 @@ ul{list-style:none;margin:0;padding:0;}
 
 /* -- 10.2) blog single -- */
 
-.single-blog{padding-bottom:0!important;}
+// .single-blog{padding-bottom:0!important;}
 
-.single-blog-title h2{font-size:22px;line-height:22px;letter-spacing:4px;margin-bottom:10px;font-weight:400;text-transform:uppercase;text-align:center;}
-.single-blog-title p{font-size:13px;line-height:19px;letter-spacing:1.5px;text-align:center;}
-.single-blog-title p:after{width:40px;height:1px;display:block;background-color:#111111;content:"";margin:20px auto 20px;}
+// .single-blog-title h2{font-size:22px;line-height:22px;letter-spacing:4px;margin-bottom:10px;font-weight:400;text-transform:uppercase;text-align:center;}
+// .single-blog-title p{font-size:13px;line-height:19px;letter-spacing:1.5px;text-align:center;}
+// .single-blog-title p:after{width:40px;height:1px;display:block;background-color:#111111;content:"";margin:20px auto 20px;}
 
-.single-image{margin-bottom:40px;}
+// .single-image{margin-bottom:40px;} 
 
 
 
@@ -384,6 +408,7 @@ ul{list-style:none;margin:0;padding:0;}
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 1rem;
+	font: normal normal 500 1.6rem/2rem 'Quicksand', sans-serif;
 }
 .radio {
 	margin: 0.5rem;
@@ -401,8 +426,8 @@ ul{list-style:none;margin:0;padding:0;}
 	width: 1.4em;
 	height: 1.4em;
 	position: relative;
-	top: -0.2em;
-	margin-right: 1em;
+	top: 0em;
+	margin-right: 0.75em;
 	vertical-align: top;
 	cursor: pointer;
 	text-align: center;
