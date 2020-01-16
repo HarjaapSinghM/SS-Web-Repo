@@ -15,86 +15,85 @@
 <body>
 
     <section class="wrapper">
-        <main>
 
         <div class="container">
             <form id="staging-appointment-form" method="post" data-netlify="true" name="staging-appointment-form">
                 <h1>Home Staging Appointment</h1>
 
                 <div class="form-group">
-                <input type="text" id="name" required="required"/>
-                <label for="name" class="control-label">Name</label><i class="bar"></i>
+                    <input type="text" id="name" required="required"/>
+                    <label for="name" class="control-label" value="">Name</label><i class="bar"></i>
                 </div>
 
                 <div class="form-group">
-                <select id="clientType" required="required">
-                    <option>Realtor</option>
-                    <option>Homeowner</option>
-                </select>
-                <label for="select" class="control-label">Client Type</label><i class="bar"></i>
+                    <select id="clientType" required="required">
+                        <option value="realtor">Realtor</option>
+                        <option value="homeowner">Homeowner</option>
+                    </select>
+                    <label for="clientType" class="control-label">Client Type</label><i class="bar"></i>
                 </div>
 
-              <div class="form-group">
-                <input type="email" id="email" required="required"/>
-                <label for="email" class="control-label">Email</label><i class="bar"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="tel" id="phone" required="required"/>
-                <label for="phone" class="control-label">Phone</label><i class="bar"></i>
-              </div>
-              
-              <div class="form-group">
-                <select id="serviceType" required="required">
-                    <option>Pre-Staging Consultation</option>
-                    <option>Staging D.I.Y.</option>
-                </select>
-                <label for="select" class="control-label">Service Type</label><i class="bar"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="date" id="date" required="required"/>
-                <label for="date" class="control-label">Date</label><i class="bar"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="time" id="time" required="required"/>
-                <label for="time" class="control-label">Time</label><i class="bar"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="number" id="sqft" required="required"/>
-                <label for="sqft" class="control-label">Approximate Sq. Ft.</label><i class="bar"></i>
-              </div>
-
-              <div class="form-group">
-                <select id="propertyType" required="required">
-                    <option>Bungalow</option>
-                    <option>Condo</option>
-                    <option>Detached</option>
-                    <option>Semi-Detached</option>
-                    <option>Townhouse</option>
-                </select>
-                <label for="select" class="control-label">Property Type</label><i class="bar"></i>
-              </div>
-
-              <div class="form-radio">
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="radio" checked="checked"/><i class="helper"></i>The basement will be staged
-                  </label>
+                <div class="form-group">
+                    <input type="email" id="email" required="required"/>
+                    <label for="email" class="control-label">Email</label><i class="bar"></i>
                 </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="radio"/><i class="helper"></i>The basement will not be staged
-                  </label>
-                </div>
-              </div>
 
-              <div class="form-group">
-                <input type="text" id="address" required="required"/>
-                <label for="address" class="control-label">Property Address</label><i class="bar"></i>
-              </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required="required"/>
+                    <label for="phone" class="control-label">Phone</label><i class="bar"></i>
+                </div>
+                
+                <div class="form-group">
+                    <select id="serviceType" required="required">
+                        <option value="Pre-Staging Consultation">Pre-Staging Consultation</option>
+                        <option value="Staging DIY">Staging D.I.Y.</option>
+                    </select>
+                    <label for="serviceType" class="control-label">Service Type</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" id="date" required="required"/>
+                    <label for="date" class="control-label">Date</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="time" id="time" required="required"/>
+                    <label for="time" class="control-label">Time</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="sqft" required="required"/>
+                    <label for="sqft" class="control-label">Approximate Sq. Ft.</label><i class="bar"></i>
+                </div>
+
+                <div class="form-group">
+                    <select id="propertyType" required="required">
+                        <option>Bungalow</option>
+                        <option>Condo</option>
+                        <option>Detached</option>
+                        <option>Semi-Detached</option>
+                        <option>Townhouse</option>
+                    </select>
+                    <label for="select" class="control-label">Property Type</label><i class="bar"></i>
+                </div>
+
+                <div class="form-radio">
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="radio" checked="checked"/><i class="helper"></i>The basement will be staged
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="radio"/><i class="helper"></i>The basement will not be staged
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="address" required="required"/>
+                    <label for="address" class="control-label">Property Address</label><i class="bar"></i>
+                </div>
 
             <div class="halves">
                 <div class="form-group half">
@@ -123,8 +122,8 @@
                             <option value="Vaughan"  >Vaughan</option>
                             <option value="Waterloo"  >Waterloo</option>
                     </select>
-                    <label for="select" class="control-label">City</label><i class="bar"></i>
-                  </div>
+                    <label for="propertyType" class="control-label">City</label><i class="bar"></i>
+                </div>
 
                 <div class="form-group half">
                     <input type="text" id="postal" required="required"/>
@@ -183,16 +182,11 @@
             </div>
 
             <div class="button-container">
-              <button value="Submit" type="submit" class="button"><span>Submit</span></button>
+                <button value="Submit" type="submit" class="button"><span>Submit</span></button>
             </div>
-            </form>
-            
-          </div>
-
-          
-
-
-    </div> <!-- End of Wrapper -->
+            </form>    
+        </div>
+    </section> <!-- End of Wrapper -->
 
     
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
