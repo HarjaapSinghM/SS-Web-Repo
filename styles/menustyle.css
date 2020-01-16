@@ -86,14 +86,14 @@ ul{list-style:none;margin:0;padding:0;}
 
 	/* -- ALL -- */
 	
-	.page-section{padding:70px 0;}
+	/* .page-section{padding:70px 0;} */
 	
 
 	/* -- HEADER -- */
 
 		.header-main{height:70px;}
 		.header-wide .container{width:100%;}
-		#main-content{padding-top:70px!important;}
+		#main-content{padding-top:0px!important;}
 
 	
 		/* -- nav drop down button / hamburger icon -- */
