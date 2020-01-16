@@ -1555,10 +1555,12 @@ ul {
     height: 25rem; }
   .radios {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 3rem; }
   .radio {
     margin: 0 auto;
-    width: 30rem; }
+    width: 30rem;
+    text-align: center; }
   .radio + .radio {
     margin-top: 2rem; } }
 

@@ -216,11 +216,13 @@
 
     .radios {
         flex-wrap: wrap;
+        margin-bottom: 3rem;
     }
 
     .radio  {
     margin: 0 auto;
     width: 30rem;
+    text-align: center;
     }
 
     .radio + .radio {
