@@ -69,10 +69,21 @@ function validateCardType(cardNumber) {
     // check to see if the number is valid
     if (numbersTotal % 10 === 0) {
       cardValid.innerText = "Valid Card";
+      return true
     } else {
       cardValid.innerText = "Invalid Card";
+      return false
     }
   }
+
+
+function submitIt() {
+  if (cardValid.innerText === "Valid Card") {
+    return true
+  } else {
+    return false
+  }
+};
 
 // run function to test if card is valid when user leaves the credit card field 
 
