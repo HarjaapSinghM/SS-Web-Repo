@@ -314,6 +314,8 @@ h4 {
     width: 100%;
     max-width: 100%;
     text-align: right; }
+    .agentReco .agentImg img {
+      margin-bottom: -6px; }
     .agentReco .agentImg ::after {
       content: "";
       background: none; }
@@ -942,7 +944,8 @@ body {
   .agentReco .agentImg img {
     position: absolute;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    margin-bottom: 0px; }
   .agentReco .leftText {
     width: 70%; } }
 

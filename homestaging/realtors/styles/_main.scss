@@ -82,7 +82,11 @@ h4 {
         width: 100%;
         max-width: 100%;
         text-align: right;
-    
+        
+        img {
+            margin-bottom: -6px;
+        }
+        
         ::after {
             content: "";
             background: none;

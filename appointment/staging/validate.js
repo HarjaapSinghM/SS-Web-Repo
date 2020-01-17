@@ -68,10 +68,10 @@ function validateCardType(cardNumber) {
     
     // check to see if the number is valid
     if (numbersTotal % 10 === 0) {
-      cardValid.innerText = "Valid Card";
+      cardValid.innerText = "Valid";
       return true
     } else {
-      cardValid.innerText = "Invalid Card";
+      cardValid.innerText = "Invalid";
       return false
     }
   }
