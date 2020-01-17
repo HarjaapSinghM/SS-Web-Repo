@@ -81,6 +81,7 @@ function submitIt() {
   if (cardValid.innerText === "Valid Card") {
     return true
   } else {
+    alert("The credit card entered is not valid")
     return false
   }
 };
