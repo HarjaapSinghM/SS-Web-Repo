@@ -19,170 +19,181 @@
         <div class="container">
             <form id="staging-appointment-form" method="post" data-netlify="true" name="staging-appointment-form" onsubmit="return submitIt();">
                 <h1>Home Staging Appointment</h1>
+                <div class="headingUnderline"></div>
 
-                <div class="form-group">
-                    <input type="text" name="name" id="name" required="required"/>
-                    <label for="name" class="control-label" value="">Name</label><i class="bar"></i>
-                </div>
+                <p>Welcome to the Studio Sheen experience! If you are visiting this page, it means that you have been in touch with one of our team members and will be working with us in the span of just a few days. Thank you for choosing us and we are thrilled to work with you!</p>
 
-                <div class="form-group">
-                    <select id="clientType" required="required" name="clientType">
-                        <option value="realtor">Realtor</option>
-                        <option value="homeowner">Homeowner</option>
-                    </select>
-                    <label for="clientType" class="control-label">Client Type</label><i class="bar"></i>
-                </div>
+                <p>Please Note: The following form contains required pieces of information which must be filled out in order for the process to move forward. This website is secured by SSL encryption and your credit card will only be authorized and not charged until after the appointment. Upon the completion of the project, client card data is permanently removed from our servers. All major credit cards other than American Express are accepted.</p>
+                    
+                <p>The cardholder acknowledges & agrees that the Staging Consultation fee is non-refundable. If the cardholder engages Studio Sheen for the staging of the property mentioned in the form, this amount will be considered as a deposit and adjusted in the final invoice.
+                If you have any questions about this form, please give us a call at 647-821-9679. Welcome to Studio Sheen!</p>
 
-                <div class="form-group">
-                    <input type="email" name="email" id="email" required="required"/>
-                    <label for="email" class="control-label">Email</label><i class="bar"></i>
-                </div>
+                <div class="inputWrapper">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" required="required"/>
+                        <label for="name" class="control-label" value="">Name</label><i class="bar"></i>
+                    </div>
 
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" required="required"/>
-                    <label for="phone" class="control-label">Phone</label><i class="bar"></i>
+                    <div class="form-group">
+                        <select id="clientType" required="required" name="clientType">
+                            <option value="realtor">Realtor</option>
+                            <option value="homeowner">Homeowner</option>
+                        </select>
+                        <label for="clientType" class="control-label">Client Type</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" required="required"/>
+                        <label for="email" class="control-label">Email</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required="required"/>
+                        <label for="phone" class="control-label">Phone</label><i class="bar"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="serviceType" name="Service Type" required="required">
+                            <option value="Pre-Staging Consultation">Pre-Staging Consultation</option>
+                            <option value="Staging DIY">Staging D.I.Y.</option>
+                        </select>
+                        <label for="serviceType" class="control-label">Service Type</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" id="date" name="date" required="required"/>
+                        <label for="date" class="control-label">Date</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="time" id="time" name="time" required="required"/>
+                        <label for="time" class="control-label">Time</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" id="sqft" name="Square Feet" required="required"/>
+                        <label for="sqft" class="control-label">Approximate Sq. Ft.</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="propertyType" name="Property Type" required="required">
+                            <option>Bungalow</option>
+                            <option>Condo</option>
+                            <option>Detached</option>
+                            <option>Semi-Detached</option>
+                            <option>Townhouse</option>
+                        </select>
+                        <label for="select" class="control-label">Property Type</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-radio">
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="BasementStaging" value="Basement to be Staged" checked="checked" /><i class="helper"></i>The basement will be staged
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="BasementStaging" id="basementNotStaged" value="Basement Not to be Staged"/><i class="helper"></i>The basement will not be staged
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="address" required="required"/>
+                        <label for="address" class="control-label">Property Address</label><i class="bar"></i>
+                    </div>
+
+                <div class="halves">
+                    <div class="form-group half">
+                        <select id="propertyType" name="city" required="required">
+                            <option value="Ajax"  selected="selected" >Ajax</option>
+                            <option value="Bradford">Bradford</option>
+                            <option value="Brampton">Brampton</option>
+                            <option value="Burlington">Burlington</option>
+                            <option value="East York">East York</option>
+                            <option value="Etobicoke">Etobicoke</option>
+                            <option value="Georgetown">Georgetown</option>
+                            <option value="Hamilton">Hamilton</option>
+                            <option value="Kitchener">Kitchener</option>
+                            <option value="Markham">Markham</option>
+                            <option value="Milton">Milton</option>
+                            <option value="Mississauga">Mississauga</option>
+                            <option value="North York">North York</option>
+                            <option value="Oakville">Oakville</option>
+                            <option value="Oshawa">Oshawa</option>
+                            <option value="Pickering">Pickering</option>
+                            <option value="Richmond Hill">Richmond Hill</option>
+                            <option value="Scarborough">Scarborough</option>
+                            <option value="Stouffville">Stouffville</option>
+                            <option value="Thornhill">Thornhill</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Vaughan">Vaughan</option>
+                            <option value="Waterloo">Waterloo</option>
+                        </select>
+                        <label for="propertyType" class="control-label">City</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-group half">
+                        <input type="text" id="postal" name="Postal" required="required"/>
+                        <label for="postal" class="control-label">Postal Code</label><i class="bar"></i>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <select id="serviceType" name="Service Type" required="required">
-                        <option value="Pre-Staging Consultation">Pre-Staging Consultation</option>
-                        <option value="Staging DIY">Staging D.I.Y.</option>
-                    </select>
-                    <label for="serviceType" class="control-label">Service Type</label><i class="bar"></i>
+                <div class="form-group row">
+                    <input type="text" id="creditCard" name="Credit Card" required onblur="validateCard(this.value)"/>
+                    <!-- <button type="button" class="btn btn-primary" onclick="">Validate Credit Card</button> -->
+                    <div class="label label-primary" id="cardType"></div>
+                    <div class="label label-primary" id="cardValid"></div>
+                    <label for="creditCard" class="control-label">Credit Card</label><i class="bar"></i>
                 </div>
 
-                <div class="form-group">
-                    <input type="date" id="date" name="date" required="required"/>
-                    <label for="date" class="control-label">Date</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group">
-                    <input type="time" id="time" name="time" required="required"/>
-                    <label for="time" class="control-label">Time</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group">
-                    <input type="number" id="sqft" name="Square Feet" required="required"/>
-                    <label for="sqft" class="control-label">Approximate Sq. Ft.</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group">
-                    <select id="propertyType" name="Property Type" required="required">
-                        <option>Bungalow</option>
-                        <option>Condo</option>
-                        <option>Detached</option>
-                        <option>Semi-Detached</option>
-                        <option>Townhouse</option>
-                    </select>
-                    <label for="select" class="control-label">Property Type</label><i class="bar"></i>
-                </div>
-
-                <div class="form-radio">
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="BasementStaging" value="Basement to be Staged" checked="checked" /><i class="helper"></i>The basement will be staged
-                        </label>
+                <div class="thirds">
+                    <div class="form-group third">
+                        <select id="month" name="Expiry Month" required="required">
+                            <option value="1" selected="selected">1</option>                            
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label for="month" class="control-label">Month</label><i class="bar"></i>
                     </div>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="BasementStaging" id="basementNotStaged" value="Basement Not to be Staged"/><i class="helper"></i>The basement will not be staged
-                        </label>
+
+                    <div class="form-group third">
+                        <select id="year" name="Expiry Year" required="required">
+                            <option value="2020" selected="selected">2020</option>                            
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                        <label for="year" class="control-label">Year</label><i class="bar"></i>
                     </div>
+
+                    <div class="form-group third">
+                        <input type="text" id="cvc" name="CVC" required="required"/>
+                        <label for="cvc" class="control-label">CVC</label><i class="bar"></i>
+                    </div>
+
                 </div>
 
-                <div class="form-group">
-                    <input type="text" id="address" required="required"/>
-                    <label for="address" class="control-label">Property Address</label><i class="bar"></i>
+                <div class="button-container">
+                    <button value="Submit" type="submit" class="button"><span>Submit</span></button>
                 </div>
 
-            <div class="halves">
-                <div class="form-group half">
-                    <select id="propertyType" name="city" required="required">
-                        <option value="Ajax"  selected="selected" >Ajax</option>
-                        <option value="Bradford">Bradford</option>
-                        <option value="Brampton">Brampton</option>
-                        <option value="Burlington">Burlington</option>
-                        <option value="East York">East York</option>
-                        <option value="Etobicoke">Etobicoke</option>
-                        <option value="Georgetown">Georgetown</option>
-                        <option value="Hamilton">Hamilton</option>
-                        <option value="Kitchener">Kitchener</option>
-                        <option value="Markham">Markham</option>
-                        <option value="Milton">Milton</option>
-                        <option value="Mississauga">Mississauga</option>
-                        <option value="North York">North York</option>
-                        <option value="Oakville">Oakville</option>
-                        <option value="Oshawa">Oshawa</option>
-                        <option value="Pickering">Pickering</option>
-                        <option value="Richmond Hill">Richmond Hill</option>
-                        <option value="Scarborough">Scarborough</option>
-                        <option value="Stouffville">Stouffville</option>
-                        <option value="Thornhill">Thornhill</option>
-                        <option value="Toronto">Toronto</option>
-                        <option value="Vaughan">Vaughan</option>
-                        <option value="Waterloo">Waterloo</option>
-                    </select>
-                    <label for="propertyType" class="control-label">City</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group half">
-                    <input type="text" id="postal" name="Postal" required="required"/>
-                    <label for="postal" class="control-label">Postal Code</label><i class="bar"></i>
-                </div>
-            </div>
-            
-            <div class="form-group row">
-                <input type="text" id="creditCard" name="Credit Card" required onblur="validateCard(this.value)"/>
-                <!-- <button type="button" class="btn btn-primary" onclick="">Validate Credit Card</button> -->
-                <div class="label label-primary" id="cardType"></div>
-                <div class="label label-primary" id="cardValid"></div>
-                <label for="creditCard" class="control-label">Credit Card</label><i class="bar"></i>
-            </div>
-
-            <div class="thirds">
-                <div class="form-group third">
-                    <select id="month" name="Expiry Month" required="required">
-                        <option value="1" selected="selected">1</option>                            
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <label for="month" class="control-label">Month</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group third">
-                    <select id="year" name="Expiry Year" required="required">
-                        <option value="2020" selected="selected">2020</option>                            
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2029</option>
-                        <option value="2030">2030</option>
-                    </select>
-                    <label for="year" class="control-label">Year</label><i class="bar"></i>
-                </div>
-
-                <div class="form-group third">
-                    <input type="text" id="cvc" name="CVC" required="required"/>
-                    <label for="cvc" class="control-label">CVC</label><i class="bar"></i>
-                </div>
-
-            </div>
-
-            <div class="button-container">
-                <button value="Submit" type="submit" class="button"><span>Submit</span></button>
             </div>
             </form>    
         </div>
