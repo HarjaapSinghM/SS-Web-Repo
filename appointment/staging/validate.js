@@ -18,15 +18,25 @@ function validateCardType(cardNumber) {
     var isVisa = cardNumber.startsWith("4");
 
     if (isAmex === true) {
-        cardType.innerText = "Amex";
+        cardType.innerText = "Amex (not accepted)";
+        $("#cardType").css({"color": "red"}); 
+        $("#cardValid").css({"display": "none"});
     } else if (isDiscover === true) {
         cardType.innerText = "Discover";
+        $("#cardType").css({"color": "black"}); 
+        $("#cardValid").css({"display": "inline"});
     } else if (isMasterCard === true) {
         cardType.innerText = "Master Card";
+        $("#cardType").css({"color": "black"}); 
+        $("#cardValid").css({"display": "inline"});
     } else if (isVisa === true) {
         cardType.innerText = "Visa";
+        $("#cardType").css({"color": "black"}); 
+        $("#cardValid").css({"display": "inline"});
     } else {
         cardType.innerText = "Unknown";
+        $("#cardType").css({"color": "red"}); 
+        $("#cardValid").css({"display": "none"});
     }
 }
   
@@ -78,13 +88,19 @@ function validateCardType(cardNumber) {
 
 
 function submitIt() {
-  if (cardValid.innerText === "Valid Card") {
+  if (cardValid.innerText === "Valid" && cardType.innerText != "Amex") {
     return true
+  } else if (cardValid.innerText === "Valid" && cardType.innerText === "Amex") {
+    alert("Note: We are unable to accept American Express cards at this time.")
+    return false
+  } else if (cardValid.innerText === "Valid" && cardType.innerText === "Unknown") {
+    alert("Note: We are only able to accept Visa or MasterCard at this time.")
+    return false
   } else {
     alert("The credit card entered is not valid")
     return false
   }
-};
+}; 
 
 // run function to test if card is valid when user leaves the credit card field 
 

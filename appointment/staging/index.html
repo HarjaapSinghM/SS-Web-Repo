@@ -18,7 +18,7 @@
 
         <div class="container">
             <form id="staging-appointment-form" method="post" data-netlify="true" name="staging-appointment-form" onsubmit="return submitIt();">
-                <h1>Home Staging Appointment</h1>
+                <h1>Welcome to Studio Sheen</h1>
                 <div class="headingUnderline"></div>
 
                 <p>Welcome to the Studio Sheen experience! If you are visiting this page, it means that you have been in touch with one of our team members and will be working with us in the span of just a few days. Thank you for choosing us and we are thrilled to work with you!</p>
@@ -34,13 +34,13 @@
                         <label for="name" class="control-label" value="">Name</label><i class="bar"></i>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <select id="clientType" required="required" name="clientType">
                             <option value="realtor">Realtor</option>
                             <option value="homeowner">Homeowner</option>
                         </select>
                         <label for="clientType" class="control-label">Client Type</label><i class="bar"></i>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <input type="email" name="email" id="email" required="required"/>
@@ -56,6 +56,7 @@
                         <select id="serviceType" name="Service Type" required="required">
                             <option value="Pre-Staging Consultation">Pre-Staging Consultation</option>
                             <option value="Staging DIY">Staging D.I.Y.</option>
+                            <option value="Interior Decor">Interior Decoration Consultation</option>
                         </select>
                         <label for="serviceType" class="control-label">Service Type</label><i class="bar"></i>
                     </div>
@@ -75,7 +76,7 @@
                         <label for="sqft" class="control-label">Approximate Sq. Ft.</label><i class="bar"></i>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <select id="propertyType" name="Property Type" required="required">
                             <option>Bungalow</option>
                             <option>Condo</option>
@@ -84,9 +85,9 @@
                             <option>Townhouse</option>
                         </select>
                         <label for="select" class="control-label">Property Type</label><i class="bar"></i>
-                    </div>
+                    </div> -->
 
-                    <div class="form-radio">
+                    <!-- <div class="form-radio">
                         <div class="radio">
                             <label>
                             <input type="radio" name="BasementStaging" value="Basement to be Staged" checked="checked" /><i class="helper"></i>The basement will be staged
@@ -97,11 +98,11 @@
                             <input type="radio" name="BasementStaging" id="basementNotStaged" value="Basement Not to be Staged"/><i class="helper"></i>The basement will not be staged
                             </label>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <input type="text" id="address" required="required"/>
-                        <label for="address" class="control-label">Property Address</label><i class="bar"></i>
+                        <label for="address" class="control-label">Property Street Address</label><i class="bar"></i>
                     </div>
 
                 <div class="halves">
