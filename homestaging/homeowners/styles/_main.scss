@@ -154,7 +154,7 @@ h4 {
 .twoPhotos {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
     .pic {
         position: relative;
@@ -165,21 +165,25 @@ h4 {
             height: 100%;
             width: 100%;
             object-fit: cover;
+            object-position: bottom;
         }   
+    }
+
+    :nth-child(1) {
+        margin-right: 5rem;
     }
 
     .first {
         width: calc(65% - 5rem);
-        margin-right: 5rem;
     }
 
     .second {
         width: 35%;
     }
+}
 
-    // .second {
-    //     width: 30%;
-    // }
+.twoPhotos.divider {
+    margin-bottom: 10rem;
 }
 
 .cards {

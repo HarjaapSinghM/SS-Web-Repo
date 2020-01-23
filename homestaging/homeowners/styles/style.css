@@ -370,7 +370,7 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 10rem; }
+  margin-bottom: 5rem; }
   .twoPhotos .pic {
     position: relative;
     height: 45rem; }
@@ -379,12 +379,18 @@ h4 {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
-      object-fit: cover; }
-  .twoPhotos .first {
-    width: calc(65% - 5rem);
+      object-fit: cover;
+      -o-object-position: bottom;
+      object-position: bottom; }
+  .twoPhotos :nth-child(1) {
     margin-right: 5rem; }
+  .twoPhotos .first {
+    width: calc(65% - 5rem); }
   .twoPhotos .second {
     width: 35%; }
+
+.twoPhotos.divider {
+  margin-bottom: 10rem; }
 
 .cards {
   display: -webkit-box;
@@ -735,7 +741,7 @@ body {
   color: #2E425B; }
 
 #content {
-  font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+  font: 500 1.6rem / 2.4rem "Quicksand", sans-serif;
   color: #2E425B; }
 
 .faq-box {
@@ -771,6 +777,7 @@ body {
   float: right; }
 
 .faq-heading, .faq-plus {
+  color: #2E425B;
   display: inline-block; }
 
 @media only screen and (min-width: 768px) {
@@ -905,7 +912,9 @@ body {
       .cards .cardWrap .cardTile {
         height: 35rem; }
     .cards .cardWrap + .cardWrap {
-      margin-top: 5rem; } }
+      margin-top: 5rem; }
+  .twoPhotos .pic {
+    height: 30rem; } }
 
 @media (max-width: 1000px) {
   .twoPhotos .pic {
@@ -1013,7 +1022,13 @@ body {
       margin: 2rem 0rem; }
   h1 {
     font-size: 4rem;
-    line-height: 6rem; } }
+    line-height: 6rem; }
+  .twoPhotos .pic {
+    height: 27rem; } }
+
+@media (max-width: 500px) {
+  .twoPhotos .pic {
+    height: 20rem; } }
 
 @media (max-width: 400px) {
   .accolades .acco {

@@ -50,7 +50,34 @@
         }
     
     }
+
+    .ctaCards .ctaCardWrap .ctaCard {
+        a {
+            font-size: $sectionHeadingFontSize * 0.6;
+            line-height: $sectionHeadingLineHeight * 0.6;
+        }
+    }
 }
+
+@media (max-width: 827px) {
+    .ctaCards {
+        flex-wrap: wrap;
+
+        .ctaCardWrap {
+            width: 100%;
+        }
+
+        .ctaCardWrap + .ctaCardWrap {
+            margin-top: 3rem;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+
 @media (max-width: 800px) {
     .footerTop {
         margin-bottom: 5rem;
@@ -105,13 +132,6 @@
 
         .familyText {
             width: 84%;
-        }
-    }
-
-    .ctaCards {
-
-        .ctaCardWrap {
-            width: 46%;
         }
     }
 }

@@ -9,7 +9,7 @@
 }
 
 #content {
-    font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+    font: 500 1.6rem / 2.4rem "Quicksand", sans-serif;
     color:#2E425B;
 }
 .faq-box {
@@ -38,6 +38,7 @@
     float: right;
 }
 .faq-heading, .faq-plus {
+    color: $primaryColour;
     display: inline-block;
 }
 

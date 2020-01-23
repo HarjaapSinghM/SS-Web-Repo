@@ -291,7 +291,8 @@ p {
         margin: 0; }
 
 #team {
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  margin-bottom: 10rem; }
 
 .facts {
   color: black;

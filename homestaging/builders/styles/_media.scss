@@ -77,13 +77,23 @@
     
     }
 
+    .halves {
+        .halfT {
+            height: 30rem;
+        }
+    }
+
+    .twoPhotos .pic {
+        height: 30rem;
+    }
+
 
 }
 
 @media (max-width: 1000px) {
     .twoPhotos {
         .pic {
-            height: 15rem;
+            height: 30rem;
         }
 
         .first  {
@@ -116,16 +126,35 @@
 
     }
 
+    .halves {
+        .halfT {
+            height: 25rem;
+        }
+    }
     
 }
+
 @media (max-width: 900px) {
     h1 {
         font-size: 6rem;
         line-height: 8rem
     }
     
-    
+    .halves {
+        flex-wrap: wrap;
+        .halfT {
+            height: 40rem;
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        :nth-child(2) {
+            margin-left: 0rem;
+        }
+    }
 }
+    
+
 
 @media (max-width: 800px) {
     .footerMain {
@@ -198,6 +227,13 @@
             width: 46%;
         }
     }
+
+    .twoPhotos {
+        .pic {
+            height: 25rem;
+        }
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -248,5 +284,19 @@
     h1 {
         font-size: 4rem;
         line-height: 6rem;
+    }
+
+    .twoPhotos {
+        .pic {
+            height: 27rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .twoPhotos {
+        .pic {
+            height: 20rem;
+        }
     }
 }

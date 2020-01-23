@@ -54,6 +54,12 @@
             height: 40rem;
         }
     }
+
+    .halves {
+        .halfT {
+            height: 30rem;
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -107,6 +113,11 @@
 
     }
 
+    .halves {
+        .halfT {
+            height: 25rem;
+        }
+    }
     
 }
 @media (max-width: 900px) {
@@ -140,7 +151,18 @@
         }
     }
 
-    
+    .halves {
+        flex-wrap: wrap;
+        .halfT {
+            height: 40rem;
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        :nth-child(2) {
+            margin-left: 0rem;
+        }
+    }
 }
 
 @media (max-width: 800px) {

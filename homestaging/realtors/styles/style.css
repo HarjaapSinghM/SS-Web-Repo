@@ -375,7 +375,7 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 10rem; }
+  margin-bottom: 5rem; }
   .twoPhotos .pic {
     position: relative;
     height: 30rem; }
@@ -394,6 +394,27 @@ h4 {
     width: calc(65% - 5rem); }
   .twoPhotos .second {
     width: 35%; }
+
+.halves {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .halves :nth-child(2) {
+    margin-left: 5rem; }
+  .halves .halfT {
+    width: calc(100% * 2);
+    position: relative;
+    height: 45rem;
+    margin-bottom: 1.5rem; }
+    .halves .halfT img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
 
 .twoPhotos.tall .pic {
   height: 48rem; }
@@ -747,7 +768,7 @@ body {
   color: #2E425B; }
 
 #content {
-  font: 500 1.6rem / 2rem "Quicksand", sans-serif;
+  font: 500 1.6rem / 2.4rem "Quicksand", sans-serif;
   color: #2E425B; }
 
 .faq-box {
@@ -783,6 +804,7 @@ body {
   float: right; }
 
 .faq-heading, .faq-plus {
+  color: #2E425B;
   display: inline-block; }
 
 @media only screen and (min-width: 768px) {
@@ -902,7 +924,9 @@ body {
     .cards .cardWrap + .cardWrap {
       margin-top: 5rem; }
   .twoPhotos.tall .pic {
-    height: 40rem; } }
+    height: 40rem; }
+  .halves .halfT {
+    height: 30rem; } }
 
 @media (max-width: 1000px) {
   .twoPhotos .pic {
@@ -930,7 +954,9 @@ body {
       margin: 0%; }
     .footerTop .callCTA {
       text-align: center;
-      margin: 5% auto; } }
+      margin: 5% auto; }
+  .halves .halfT {
+    height: 25rem; } }
 
 @media (max-width: 900px) {
   h1 {
@@ -948,7 +974,16 @@ body {
     right: 0;
     margin-bottom: 0px; }
   .agentReco .leftText {
-    width: 70%; } }
+    width: 70%; }
+  .halves {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .halves .halfT {
+      height: 40rem;
+      width: 100%;
+      margin-bottom: 0.75rem; }
+    .halves :nth-child(2) {
+      margin-left: 0rem; } }
 
 @media (max-width: 800px) {
   .footerMain {
