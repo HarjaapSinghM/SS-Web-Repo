@@ -888,7 +888,8 @@ h4 {
     flex-direction: column-reverse;
     margin-top: 0rem; }
     .family .familyPhoto {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 6rem; }
     .family .familyText {
       width: 90%;
       margin: 1rem auto 6rem;
@@ -907,7 +908,9 @@ h4 {
     .cards .cardWrap + .cardWrap {
       margin-top: 5rem; }
   .threeCards .cardWrap .cardTile {
-    height: 28rem; } }
+    height: 28rem; }
+  .landingImage {
+    margin-bottom: 1rem; } }
 
 @media (max-width: 700px) {
   .threeCards :nth-child(3) {
