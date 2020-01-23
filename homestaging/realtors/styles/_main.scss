@@ -174,9 +174,12 @@ h4 {
         object-position: top;
     }
     
+    :nth-child(1) {
+        margin-right: 5rem;
+    }
+
     .first {
         width: calc(65% - 5rem);
-        margin-right: 5rem;
     }
 
     .second {

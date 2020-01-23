@@ -373,7 +373,7 @@ h4 {
   margin-bottom: 10rem; }
   .twoPhotos .pic {
     position: relative;
-    height: 30rem; }
+    height: 45rem; }
     .twoPhotos .pic img {
       position: absolute;
       height: 100%;
@@ -909,7 +909,7 @@ body {
 
 @media (max-width: 1000px) {
   .twoPhotos .pic {
-    height: 15rem; }
+    height: 30rem; }
   .twoPhotos .first {
     width: 100%;
     margin: 0%; }
@@ -976,7 +976,9 @@ body {
     .family .familyText {
       width: 84%; }
   .ctaCards .ctaCardWrap {
-    width: 46%; } }
+    width: 46%; }
+  .twoPhotos .pic {
+    height: 25rem; } }
 
 @media (max-width: 600px) {
   .ctaCards {

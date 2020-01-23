@@ -83,7 +83,7 @@
 @media (max-width: 1000px) {
     .twoPhotos {
         .pic {
-            height: 15rem;
+            height: 30rem;
         }
 
         .first  {
@@ -198,6 +198,13 @@
             width: 46%;
         }
     }
+
+    .twoPhotos {
+        .pic {
+            height: 25rem;
+        }
+    }
+
 }
 
 @media (max-width: 600px) {

@@ -66,6 +66,7 @@ h4 {
         left: 0px;
         height: 100%;
         object-fit: cover;
+        object-position: top;
     }
 }
 
@@ -492,15 +493,15 @@ h4 {
 
 @media (min-width:768px) {
     .review {
-        width:47%;
-        height:275px;
+        width:46%;
+        height:300px;
         margin-right:20px
     }
 }
 
 @media (min-width:992px) {
 .review {
-    height:285px
+    height:275px
 }
 }
 @media (min-width:1200px) {
