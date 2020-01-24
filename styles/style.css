@@ -320,7 +320,7 @@ h4 {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .family .familyPhoto {
-    height: 40rem;
+    height: 54rem;
     overflow: hidden;
     position: relative;
     width: 50%; }
@@ -777,16 +777,16 @@ h4 {
   nav {
     font-size: 1.4rem; }
     nav .navRight {
-      width: 80%; } }
+      width: 80%; }
+  .family .familyText h4 {
+    font-size: 1.89rem;
+    line-height: 2.7rem;
+    width: 100%; } }
 
 @media (max-width: 1200px) {
   h3 {
     font-size: 3.44rem;
     line-height: 4.8rem; }
-  .family .familyText h4 {
-    font-size: 1.89rem;
-    line-height: 2.7rem;
-    width: 100%; }
   .footerMain .footerSub {
     font-size: 1.68rem;
     line-height: 2.4rem; }
@@ -829,7 +829,30 @@ h4 {
   h1 {
     width: 100%;
     font-size: 5.6rem;
-    line-height: 6.8rem; } }
+    line-height: 6.8rem; }
+  .family {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-top: 0rem; }
+    .family .familyPhoto {
+      width: 100%;
+      margin-bottom: 6rem; }
+    .family .familyText {
+      width: 90%;
+      margin: 1rem auto 6rem;
+      padding-left: 0%;
+      text-align: center; }
+      .family .familyText h4 {
+        margin: 3rem auto 0rem; }
+    .family .familyText .underlined::after {
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+  .landingImage {
+    margin-bottom: 1rem; } }
 
 @media (max-width: 827px) {
   .ctaCards {
@@ -879,27 +902,6 @@ h4 {
     height: 40rem; } }
 
 @media (max-width: 763px) {
-  .family {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    margin-top: 0rem; }
-    .family .familyPhoto {
-      width: 100%;
-      margin-bottom: 6rem; }
-    .family .familyText {
-      width: 90%;
-      margin: 1rem auto 6rem;
-      padding-left: 0%;
-      text-align: center; }
-      .family .familyText h4 {
-        margin: 3rem auto 0rem; }
-    .family .familyText .underlined::after {
-      margin: 0 auto;
-      margin-bottom: 1rem; }
   .cards {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -908,9 +910,7 @@ h4 {
     .cards .cardWrap + .cardWrap {
       margin-top: 5rem; }
   .threeCards .cardWrap .cardTile {
-    height: 28rem; }
-  .landingImage {
-    margin-bottom: 1rem; } }
+    height: 28rem; } }
 
 @media (max-width: 700px) {
   .threeCards :nth-child(3) {

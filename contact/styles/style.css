@@ -272,7 +272,7 @@ nav {
 .onePhoto {
   width: 100%;
   position: relative;
-  height: 35rem;
+  height: 40rem;
   width: 100%; }
   .onePhoto img {
     position: absolute;
@@ -1442,7 +1442,9 @@ ul {
   h1 {
     width: 100%;
     font-size: 5.6rem;
-    line-height: 6.8rem; } }
+    line-height: 6.8rem; }
+  .onePhoto {
+    height: 32rem; } }
 
 @media (max-width: 800px) {
   .footerTop {
@@ -1513,6 +1515,10 @@ ul {
   .landingImage {
     margin-bottom: 0rem; } }
 
+@media (max-width: 700px) {
+  .onePhoto {
+    height: 25rem; } }
+
 @media (max-width: 600px) {
   .ctaCards {
     -ms-flex-wrap: wrap;
@@ -1566,4 +1572,6 @@ ul {
 
 @media (max-width: 400px) {
   .landingImage {
-    height: 20rem; } }
+    height: 20rem; }
+  .onePhoto {
+    height: 22rem; } }

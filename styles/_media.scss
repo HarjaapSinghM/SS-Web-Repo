@@ -6,6 +6,12 @@
         width: 80%;
         }
     }
+
+    .family .familyText h4 {
+        font-size: $bodyFontSize * 0.9;
+        line-height: $bodyLineHeight * 0.9;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -14,11 +20,7 @@
         line-height: $sectionHeadingLineHeight * 0.8;
     }
     
-    .family .familyText h4 {
-        font-size: $bodyFontSize * 0.9;
-        line-height: $bodyLineHeight * 0.9;
-        width: 100%;
-    }
+    
 
     .footerMain {
         
@@ -94,6 +96,37 @@
         font-size: $headingFontSize * 0.8;
         line-height: $headingLineHeight * 0.85;
     }
+
+    .family {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+
+        .familyPhoto {
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+
+        .familyText {
+            width: 90%;
+            margin: 1rem auto 6rem;
+            padding-left: 0%;
+            text-align: center;
+
+            h4 {
+                margin: 3rem auto 0rem;
+            }
+        }
+
+        .familyText .underlined::after {
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .landingImage {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 827px) {
@@ -113,6 +146,7 @@
         }
     }
 }
+
 @media (max-width: 800px) {
     .footerTop {
         margin-bottom: 5rem;
@@ -162,32 +196,6 @@
 
 
 @media (max-width: 763px) {
-    .family {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        margin-top: 0rem;
-
-        .familyPhoto {
-            width: 100%;
-            margin-bottom: 6rem;
-        }
-
-        .familyText {
-            width: 90%;
-            margin: 1rem auto 6rem;
-            padding-left: 0%;
-            text-align: center;
-
-            h4 {
-                margin: 3rem auto 0rem;
-            }
-        }
-
-        .familyText .underlined::after {
-            margin: 0 auto;
-            margin-bottom: 1rem;
-        }
-    }
 
     .cards {
         flex-wrap: wrap;
@@ -205,10 +213,7 @@
     .threeCards .cardWrap .cardTile {
         height: 28rem;
     }
-    
-    .landingImage {
-        margin-bottom: 1rem;
-    }
+
 }
 
 @media (max-width: 700px) {

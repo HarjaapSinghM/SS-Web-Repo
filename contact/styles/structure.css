@@ -56,7 +56,8 @@ body {-webkit-print-color-adjust:exact;font-size:13px;line-height:1.5;color:#333
 
 /* Large Desktop */
 @media (min-width:992px) {
-	.container {width:1140px;}
+	/* .container {width:1140px;} */
+	.container {width: 100%;}
 
 	.col-xlarge-1,.col-xlarge-2,.col-xlarge-3,.col-xlarge-4,.col-xlarge-5,.col-xlarge-6,.col-xlarge-7,.col-xlarge-8,.col-xlarge-9,.col-xlarge-10,.col-xlarge-11 {float:left}
 
@@ -82,6 +83,8 @@ body {-webkit-print-color-adjust:exact;font-size:13px;line-height:1.5;color:#333
 /* Small Desktop and Tablet Landscape */
 @media (min-width:992px) and (max-width:1099px) {
 	.container {width:970px}
+	/* .container {width: 100%;} */
+
 
 	.col-large-1,.col-large-2,.col-large-3,.col-large-4,.col-large-5,.col-large-6,.col-large-7,.col-large-8,.col-large-9,.col-large-10,.col-large-11 {float:left}
 
@@ -103,7 +106,8 @@ body {-webkit-print-color-adjust:exact;font-size:13px;line-height:1.5;color:#333
 
 /* Tablet */
 @media screen and (min-width:768px) and (max-width: 991px) {
-	.container {width:750px}
+	/* .container {width:750px} */
+	.container {width: 100%;}
 
 	.col-medium-1,.col-medium-2,.col-medium-3,.col-medium-4,.col-medium-5,.col-medium-6,.col-medium-7,.col-medium-8,.col-medium-9,.col-medium-10,.col-medium-11 {float:left}
 

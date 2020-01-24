@@ -258,37 +258,54 @@ h4 {
 p {
   font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif; }
 
-.team {
-  padding-top: 10rem; }
-  .team .title {
-    color: rgba(0, 0, 0, 0.6); }
-    .team .title span {
-      color: #2E425B; }
-  .team .personContent {
+.onePhoto {
+  width: 100%;
+  position: relative;
+  height: 48rem;
+  width: 100%; }
+  .onePhoto img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain; }
+
+.team .title {
+  color: rgba(0, 0, 0, 0.6); }
+  .team .title span {
+    color: #2E425B; }
+
+.team .personContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .team .personContent .personPhoto {
+    width: 22%;
+    display: block;
+    position: relative;
+    height: 34rem; }
+    .team .personContent .personPhoto img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .team .personContent .personText {
+    width: 78%;
+    padding-left: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .team .personContent .personPhoto {
-      width: 30%;
-      display: block;
-      position: relative;
-      height: 27rem; }
-      .team .personContent .personPhoto img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        -o-object-fit: cover;
-        object-fit: cover; }
-    .team .personContent .personText {
-      width: 70%;
-      padding-left: 5rem; }
-      .team .personContent .personText p {
-        text-align: left;
-        line-height: 3.9rem;
-        margin: 0; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .team .personContent .personText p {
+      text-align: left;
+      line-height: 3.9rem;
+      margin: 0; }
 
 #team {
   padding-top: 5rem;
@@ -539,19 +556,7 @@ p {
   #legal {
     display: none; }
   .landingImage {
-    height: 60rem; }
-  .team .personContent {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .team .personContent .personPhoto {
-      width: 100%;
-      height: 52rem; }
-    .team .personContent .personText {
-      width: 100%;
-      padding-left: 0rem;
-      margin-top: 2rem; }
-      .team .personContent .personText p {
-        text-align: center; } }
+    height: 60rem; } }
 
 @media (max-width: 1000px) {
   .landingImage {
@@ -566,7 +571,19 @@ p {
   h1 {
     width: 100%;
     font-size: 5.6rem;
-    line-height: 6.8rem; } }
+    line-height: 6.8rem; }
+  .team .personContent {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .team .personContent .personPhoto {
+      width: 100%;
+      height: 52rem; }
+    .team .personContent .personText {
+      width: 100%;
+      padding-left: 0rem;
+      margin-top: 2rem; }
+      .team .personContent .personText p {
+        text-align: center; } }
 
 @media (max-width: 827px) {
   .ctaCards {
