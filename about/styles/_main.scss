@@ -23,7 +23,7 @@ p {
 .onePhoto {
     width: 100%;
     position: relative;
-    height: 48rem;
+    height: 54rem;
     width: 100%;
 
     img {
@@ -31,10 +31,12 @@ p {
         height: 100%;
         width: 100%;
         object-fit: contain;
+        object-position: bottom;
     }   
 }
 
 .team {
+    margin-bottom: 10rem;
 
     .title {
         color: $secondaryColour;
@@ -57,7 +59,7 @@ p {
                 position: absolute;
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
 
@@ -78,8 +80,8 @@ p {
 
 
 #team {
-    padding-top: 5rem;
-    margin-bottom: 10rem;
+    // padding-top: 5rem;
+    // margin-bottom: 10rem;
 }
 .facts {
     color: black;

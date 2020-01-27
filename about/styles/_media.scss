@@ -81,6 +81,10 @@
             }
         }
     }
+
+    .onePhoto {
+        height: 40rem;
+    }
 }
 
 @media (max-width: 827px) {
@@ -205,7 +209,11 @@
     // }
 }
 
-
+@media (max-width: 700px) {
+    .onePhoto {
+        height: 34rem;
+    }
+}
 
 @media (max-width: 600px) {
     
@@ -271,6 +279,10 @@
 
     .team .personContent .personPhoto {
         height: 24rem;
+    }
+
+    .onePhoto {
+        height: 25rem;
     }
 }
 // 600 and under
