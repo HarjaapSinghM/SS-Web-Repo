@@ -121,6 +121,15 @@
             width: 70%;
         }
     }
+
+    .onePhoto {
+        height: 32rem;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -193,6 +202,10 @@
             margin-top: 5rem;
         }
     }
+
+    .onePhoto {
+        height: 25rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -251,5 +264,11 @@
         .pic {
             height: 23rem;
         }
+    }
+}
+
+@media (max-width:400px) {
+    .onePhoto {
+        height: 22rem;
     }
 }

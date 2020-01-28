@@ -287,14 +287,18 @@ h4 {
 .onePhoto {
   width: 100%;
   position: relative;
-  height: 35rem;
-  width: 100%; }
+  height: 40rem;
+  width: 100%;
+  padding-top: 57px;
+  overflow: hidden; }
   .onePhoto img {
     position: absolute;
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover; }
+    object-fit: cover;
+    -o-object-position: bottom;
+    object-position: bottom; }
 
 /* --------------
 
@@ -1531,7 +1535,14 @@ ul {
     bottom: 0;
     right: 0; }
   .agentReco .leftText {
-    width: 70%; } }
+    width: 70%; }
+  .onePhoto {
+    height: 32rem; }
+    .onePhoto img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: center;
+      object-position: center; } }
 
 @media (max-width: 800px) {
   .footerMain {
@@ -1575,7 +1586,9 @@ ul {
   .transforms .pic {
     width: 100%;
     height: 30rem;
-    margin-top: 5rem; } }
+    margin-top: 5rem; }
+  .onePhoto {
+    height: 25rem; } }
 
 @media (max-width: 600px) {
   .ctaCards {
@@ -1615,3 +1628,7 @@ ul {
 @media (max-width: 500px) {
   .transforms .pic {
     height: 23rem; } }
+
+@media (max-width: 400px) {
+  .onePhoto {
+    height: 22rem; } }

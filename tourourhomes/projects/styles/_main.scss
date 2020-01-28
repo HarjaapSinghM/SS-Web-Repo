@@ -52,13 +52,16 @@ h4 {
 .onePhoto {
     width: 100%;
     position: relative;
-    height: 35rem;
+    height: 40rem;
     width: 100%;
+    padding-top: 57px;
+    overflow: hidden;
 
     img {
         position: absolute;
         height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: bottom;
     }   
 }

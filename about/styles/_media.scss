@@ -10,8 +10,8 @@
 
 @media (max-width: 1200px) {
     h3 {
-        font-size: $sectionHeadingFontSize * 0.8;
-        line-height: $sectionHeadingLineHeight * 0.8;
+        font-size: $sectionHeadingFontSize * 0.7;
+        line-height: $sectionHeadingLineHeight * 0.7;
     }
     
     .family .familyText h4 {
@@ -149,9 +149,9 @@
         height: 40rem;
     }
 
-    p {
+    .team .personContent .personText p {
         font-size: $bodyFontSize * 0.85;
-        line-height: $bodyLineHeight * 1.16;
+        line-height: $bodyLineHeight * 1.05;
     }
 }
 

@@ -269,8 +269,8 @@ p {
     width: 100%;
     -o-object-fit: contain;
     object-fit: contain;
-    -o-object-position: bottom;
-    object-position: bottom; }
+    -o-object-position: center;
+    object-position: center; }
 
 .team {
   margin-bottom: 10rem; }
@@ -543,8 +543,8 @@ p {
 
 @media (max-width: 1200px) {
   h3 {
-    font-size: 3.44rem;
-    line-height: 4.8rem; }
+    font-size: 3.01rem;
+    line-height: 4.2rem; }
   .family .familyText h4 {
     font-size: 1.89rem;
     line-height: 2.7rem;
@@ -632,9 +632,9 @@ p {
       order: 1; }
   .team .personContent .personPhoto {
     height: 40rem; }
-  p {
+  .team .personContent .personText p {
     font-size: 1.785rem;
-    line-height: 3.48rem; } }
+    line-height: 3.15rem; } }
 
 @media (max-width: 763px) {
   .family {
