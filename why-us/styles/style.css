@@ -243,12 +243,45 @@ nav {
   padding-left: 3%;
   margin-top: 0.5rem; }
 
+.animate-sweet-in {
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards;
+  opacity: 0; }
+
+@-webkit-keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
-  padding-bottom: 5rem;
-  padding-top: 10rem;
-  color: #2E425B; }
+  padding: 15rem 0vh;
+  color: black;
+  width: 90%;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards; }
+  h1 span {
+    color: #2E425B; }
 
 h2 {
   font: normal normal 500 5rem/6rem "Baskervville", serif;
@@ -262,139 +295,131 @@ h3 {
 h4 {
   font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
 
-.quoteCTA {
-  text-align: center;
-  margin-bottom: 7rem; }
-  .quoteCTA :hover {
-    cursor: pointer;
-    color: #2E425B;
-    background-color: white;
-    border: 1px solid #2E425B;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .quoteCTA a {
-    background-color: #2E425B;
-    font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
-    color: white;
-    display: inline-block;
-    padding: 1.5rem 10rem;
-    text-decoration: none;
-    border-radius: 1rem;
-    border: 1px solid white;
-    white-space: nowrap; }
+.landingImage {
+  height: 70rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10rem; }
+  .landingImage img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
-.cardText a {
-  text-decoration: none;
-  color: #2E425B;
-  margin: 5% 0%;
-  font: 1.6rem;
-  font-size: 2.08rem;
-  padding: 5rem 0rem; }
-
-.cardText:hover a {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #2E425B;
-  text-decoration-color: #2E425B; }
-
-.nextAndPrevious {
-  display: block;
-  width: 100%;
+.transforms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem; }
-
-.previous :hover,
-.next :hover {
-  cursor: pointer;
-  color: #2E425B; }
-
-.previous a,
-.next a {
-  text-decoration: none;
-  font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
-  color: rgba(0, 0, 0, 0.6); }
-
-.onePhoto {
-  width: 100%;
-  position: relative;
-  height: 50rem;
-  width: 100%; }
-  .onePhoto img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: bottom;
-    object-position: bottom; }
-
-.imageWrapper {
-  width: 98%;
-  margin: 0 auto 10rem auto; }
-
-.projectDesc {
-  display: block;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
-  color: #2E425B;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center; }
-
-.twoThirds {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .twoThirds :nth-child(2) {
-    margin-left: 1.5rem; }
-  .twoThirds .twoT {
-    width: calc(100% * 2 / 3); }
-  .twoThirds .oneT {
-    width: calc(100% / 3); }
-  .twoThirds .oneT,
-  .twoThirds .twoT {
+  margin-bottom: 10rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .transforms .pic {
     position: relative;
     height: 36rem;
-    margin-bottom: 1.5rem; }
-    .twoThirds .oneT img,
-    .twoThirds .twoT img {
+    width: calc(50% - 2.5rem);
+    font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
+    .transforms .pic img {
       position: absolute;
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
+    .transforms .pic .table {
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin-bottom: 1rem; }
+      .transforms .pic .table .dom, .transforms .pic .table .rosi {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem; }
+        .transforms .pic .table .dom .result, .transforms .pic .table .rosi .result {
+          margin: 1rem;
+          font-size: 2.88rem;
+          font-weight: 400; }
+        .transforms .pic .table .dom .kpi, .transforms .pic .table .rosi .kpi {
+          color: #2E425B; }
+    .transforms .pic .desc {
+      text-align: center; }
+  .transforms .pic.results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .transforms .second {
+    width: 35%; }
+  .transforms > :nth-child(n+3) {
+    margin-top: 5rem; }
 
-.halves {
+.cardText a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.ctaCards {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .halves :nth-child(2) {
-    margin-left: 1.5rem; }
-  .halves .halfT {
-    width: calc(100% * 2);
-    position: relative;
-    height: 45rem;
-    margin-bottom: 1.5rem; }
-    .halves .halfT img {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      -o-object-fit: cover;
-      object-fit: cover; }
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .ctaCards .ctaCardWrap {
+    width: 40%;
+    position: relative; }
+    .ctaCards .ctaCardWrap :hover {
+      -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .ctaCards .ctaCardWrap .ctaCard {
+      position: relative;
+      padding: 4%; }
+      .ctaCards .ctaCardWrap .ctaCard :hover {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .ctaCards .ctaCardWrap .ctaCard p {
+        font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+        color: rgba(0, 0, 0, 0.6);
+        width: 90%; }
+      .ctaCards .ctaCardWrap .ctaCard a {
+        text-decoration: none;
+        color: #2E425B;
+        font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+        font-size: 3.01rem;
+        line-height: 4.2rem;
+        text-transform: capitalize;
+        position: relative; }
+      .ctaCards .ctaCardWrap .ctaCard i {
+        font-size: 2rem; }
 
 .footerTop {
   display: -webkit-box;
@@ -489,38 +514,22 @@ h4 {
   h3 {
     font-size: 3.44rem;
     line-height: 4.8rem; }
-  .family .familyText h4 {
-    font-size: 1.89rem;
-    line-height: 2.7rem;
-    width: 100%; }
   .footerMain .footerSub {
     font-size: 1.68rem;
     line-height: 2.4rem; }
   #legal {
     display: none; }
-  .cards {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .cards .cardWrap {
-      width: 100%; }
-      .cards .cardWrap .cardTile {
-        height: 35rem; }
-    .cards .cardWrap + .cardWrap {
-      margin-top: 5rem; }
-  .twoThirds .twoT,
-  .twoThirds .oneT {
-    height: 30rem; }
-  .halves .halfT {
+  .transforms .pic {
     height: 30rem; } }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .transforms .pic {
-    height: 20rem; }
-  .transforms .first {
     width: 100%;
-    margin: 0%; }
-  .transforms .second {
-    display: none; }
+    height: 30rem; }
+  .transforms .pic.results {
+    height: 27rem; } }
+
+@media (max-width: 800px) {
   .footerTop {
     margin-bottom: 5rem;
     -ms-flex-wrap: wrap;
@@ -533,49 +542,6 @@ h4 {
     .footerTop .callCTA {
       text-align: center;
       margin: 5% auto; }
-  .twoThirds .twoT,
-  .twoThirds .oneT {
-    height: 25rem; }
-  .halves .halfT {
-    height: 25rem; } }
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 6rem;
-    line-height: 8rem; }
-  .agentReco .reco {
-    font-size: 1.68rem;
-    line-height: 2.4rem; }
-  .agentReco .agentAbout {
-    font-size: 1.47rem;
-    line-height: 2.1rem; }
-  .agentReco .agentImg img {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-  .agentReco .leftText {
-    width: 70%; }
-  .twoThirds {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .twoThirds .twoT,
-    .twoThirds .oneT {
-      width: 100%;
-      height: 40rem;
-      margin-bottom: 0.75rem; }
-    .twoThirds :nth-child(2) {
-      margin-left: 0rem; }
-  .halves {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .halves .halfT {
-      height: 40rem;
-      width: 100%;
-      margin-bottom: 0.75rem; }
-    .halves :nth-child(2) {
-      margin-left: 0rem; } }
-
-@media (max-width: 800px) {
   .footerMain {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -595,29 +561,11 @@ h4 {
     .footerMain #navigation {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
-      order: 1; }
-  .agentReco .agentImg {
-    display: none; }
-  .agentReco .leftText {
-    width: 87%;
-    padding-bottom: 3rem; }
-  .accolades {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .accolades .acco {
-      width: 48%; }
-    .accolades .bottom {
-      margin-top: 4rem; } }
+      order: 1; } }
 
 @media (max-width: 763px) {
   .ctaCards .ctaCardWrap {
     width: 46%; } }
-
-@media (max-width: 700px) {
-  .transforms .pic {
-    width: 100%;
-    height: 30rem;
-    margin-top: 5rem; } }
 
 @media (max-width: 600px) {
   .ctaCards {
@@ -649,23 +597,10 @@ h4 {
       width: 15rem;
       margin: 0 auto; }
     .footerMain .footerSub + .footerSub {
-      margin: 2rem 0rem; }
-  h1 {
-    font-size: 5rem;
-    line-height: 6rem; }
-  .projectDesc {
-    width: 90%;
-    font-size: 1.68rem;
-    line-height: 2.4rem; }
-  .onePhoto {
-    height: 20rem; }
-  .twoThirds .twoT,
-  .twoThirds .oneT {
-    height: 20rem;
-    margin-bottom: 0.75rem; }
-  .halves .halfT {
-    height: 20rem; } }
+      margin: 2rem 0rem; } }
 
 @media (max-width: 500px) {
   .transforms .pic {
-    height: 23rem; } }
+    height: 19rem; }
+  .transforms .pic.results {
+    height: auto; } }

@@ -205,7 +205,7 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1%;
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
   nav .navLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,7 +253,7 @@ h3 {
   color: #2E425B; }
 
 h4 {
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
 
 p {
   font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif; }
@@ -380,7 +380,7 @@ p {
         -o-transition: opacity 500ms ease 0s;
         transition: opacity 500ms ease 0s; }
     .cards .cardWrap .card .cardText {
-      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
       padding-bottom: 4%;
       padding-left: 4%; }
       .cards .cardWrap .card .cardText p {
@@ -416,7 +416,7 @@ p {
     position: relative;
     text-align: center; }
     .homes .whiteoverlaybox .getaFeel {
-      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
       font-size: 3rem;
       padding-top: 32rem;
       padding-bottom: 2rem;

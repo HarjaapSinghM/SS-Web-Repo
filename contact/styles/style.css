@@ -206,7 +206,7 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1%;
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
   nav .navLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,7 +292,7 @@ h3 {
   color: #2E425B; }
 
 h4 {
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
 
 .landingImage {
   height: 70rem;
@@ -393,7 +393,7 @@ h4 {
         -o-transition: opacity 500ms ease 0s;
         transition: opacity 500ms ease 0s; }
     .cards .cardWrap .card .cardText {
-      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
       padding-bottom: 4%;
       padding-left: 4%; }
       .cards .cardWrap .card .cardText p {
@@ -436,7 +436,7 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none; }
       .ctaCards .ctaCardWrap .ctaCard p {
-        font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+        font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
         color: rgba(0, 0, 0, 0.6);
         width: 65%; }
       .ctaCards .ctaCardWrap .ctaCard a {
@@ -449,7 +449,7 @@ h4 {
   width: 33%; }
 
 .eagr-reviews-skeleton-container.jsx-1570720278 {
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
 
 .eagr-header-stats-component.jsx-781469832 {
   font-size: 1.4rem;
@@ -475,7 +475,7 @@ h4 {
     position: relative;
     text-align: center; }
     .homes .whiteoverlaybox .getaFeel {
-      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
       font-size: 3rem;
       padding-top: 32rem;
       padding-bottom: 3rem;

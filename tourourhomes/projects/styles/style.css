@@ -206,7 +206,7 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1%;
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
   nav .navLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -260,7 +260,7 @@ h3 {
   color: #2E425B; }
 
 h4 {
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif; }
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
 
 .quoteCTA {
   text-align: center;
@@ -1134,7 +1134,7 @@ ul {
   transition: opacity, 0.5s, ease-in-out; }
 
 .portfolio-hover-content h3 {
-  font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
   color: white;
   font-size: 2.1rem;
   line-height: 2.7rem;
