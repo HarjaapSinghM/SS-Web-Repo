@@ -46,6 +46,12 @@
         //     margin-top: 5rem;
         // }
     }
+
+    h1 {
+        width: 100%;
+        font-size: $headingFontSize * 0.8;
+        line-height: $headingLineHeight * 0.85;
+    }
 }
 
 @media (max-width: 800px) {
@@ -146,6 +152,11 @@
         .footerSub + .footerSub {
             margin: 2rem 0rem;
         }
+    }
+
+    h1 {
+        font-size: $headingFontSize * 0.6;
+        line-height: $headingLineHeight * 0.68;
     }
 }
 

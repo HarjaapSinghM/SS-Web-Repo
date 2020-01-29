@@ -118,6 +118,12 @@ h4 {
                     margin: 1rem;
                     font-size: $baseFontSize * 1.8;
                     font-weight: 400    ;
+                
+                    span {
+                        font-size: $baseFontSize * 1.2;
+                        line-height: $baseFontLineHeight * 1.2;
+                    }
+                
                 }
 
                 .kpi {
