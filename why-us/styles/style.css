@@ -272,7 +272,7 @@ h1 {
   font: normal normal 500 7rem/8rem "Baskervville", serif;
   margin: 0%;
   padding: 15rem 0vh;
-  color: black;
+  color: rgba(0, 0, 0, 0.6);
   width: 90%;
   -webkit-animation-delay: .2s;
   animation-delay: .2s;
