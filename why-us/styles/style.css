@@ -354,7 +354,8 @@ h4 {
           font-weight: 400; }
           .transforms .pic .table .dom .result span, .transforms .pic .table .rosi .result span {
             font-size: 1.92rem;
-            line-height: 2.4rem; }
+            line-height: 2.4rem;
+            display: inherit; }
         .transforms .pic .table .dom .kpi, .transforms .pic .table .rosi .kpi {
           color: #2E425B; }
     .transforms .pic .desc {

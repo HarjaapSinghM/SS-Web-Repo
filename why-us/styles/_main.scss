@@ -1,3 +1,7 @@
+// * {
+//     border: 2px solid salmon;
+// }
+
 .animate-sweet-in {
     -webkit-animation:sweet-in 1s ease-out forwards;
     animation:sweet-in 1s ease-out forwards;
@@ -122,6 +126,7 @@ h4 {
                     span {
                         font-size: $baseFontSize * 1.2;
                         line-height: $baseFontLineHeight * 1.2;
+                        display: inherit;
                     }
                 
                 }
