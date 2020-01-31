@@ -1,0 +1,320 @@
+@media (max-width: 1442px) {
+    nav {
+        font-size: 1.4rem;
+    
+        .navRight {
+        width: 80%;
+        }
+    }
+
+    .family .familyText h4 {
+        font-size: $bodyFontSize * 0.9;
+        line-height: $bodyLineHeight * 0.9;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    h3 {
+        font-size: $sectionHeadingFontSize * 0.8;
+        line-height: $sectionHeadingLineHeight * 0.8;
+    }
+    
+    
+
+    .footerMain {
+        
+        .footerSub {
+            font-size: $bodyFontSize * 0.8;
+            line-height: $bodyLineHeight * 0.8;
+        }
+    }
+    
+    #legal {
+        display: none;
+    }
+
+    .landingImage {
+        height: 60rem;
+    }
+
+    .threeCards {
+        flex-wrap: wrap;
+        
+        .cardWrap {
+            width: 50%;
+        
+            .cardTile {
+                height: 35rem;
+            }
+
+            #award {
+                height: 15rem;
+                width: 100%;
+
+                p {
+                    padding-top: 0%;
+                }
+            }
+        }
+
+        .cardWrap.award {
+            width: 100%;
+            order: 3;
+            margin-top: 5rem;
+        }
+    
+    }
+}
+
+
+@media (max-width:1000px) {
+    .landingImage {
+        height: 50rem;
+    }
+
+    .cards .cardWrap .card .cardTile {
+        height: 23rem; 
+    }
+
+    .ctaCards .ctaCardWrap .ctaCard {
+        a {
+            font-size: $sectionHeadingFontSize * 0.6;
+            line-height: $sectionHeadingLineHeight * 0.6;
+        }
+    }
+
+    .threeCards .cardWrap #award p {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        width: 100%;
+        font-size: $headingFontSize * 0.8;
+        line-height: $headingLineHeight * 0.85;
+    }
+
+    .family {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+
+        .familyPhoto {
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+
+        .familyText {
+            width: 90%;
+            margin: 1rem auto 6rem;
+            padding-left: 0%;
+            text-align: center;
+
+            h4 {
+                margin: 3rem auto 0rem;
+            }
+        }
+
+        .familyText .underlined::after {
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .landingImage {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 827px) {
+    .ctaCards {
+        flex-wrap: wrap;
+
+        .ctaCardWrap {
+            width: 100%;
+        }
+
+        .ctaCardWrap + .ctaCardWrap {
+            margin-top: 3rem;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footerTop {
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+
+        .leftText {
+            width: 100%;
+            text-align: center;
+        }
+
+        h3 {
+            margin: 0%;
+        }
+
+        .callCTA {
+            text-align: center;
+            margin: 5% auto;
+        }
+
+    }
+
+    .footerMain {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+
+        .footerSub {
+            text-align: center;
+        }
+
+        .logo {
+            order: 3;
+            width: 100%;
+            text-align: center;
+        }
+
+        #navigation {
+            order: 1;
+        }
+    }
+
+    .landingImage {
+        height: 40rem;
+    }
+}
+
+
+
+@media (max-width: 763px) {
+
+    .cards {
+        flex-wrap: wrap;
+        
+        .cardWrap {
+            width: 100%;
+        }
+
+        .cardWrap + .cardWrap {
+            margin-top: 5rem;
+        }
+    
+    }
+
+    .threeCards .cardWrap .cardTile {
+        height: 28rem;
+    }
+
+    .cityText {
+        width: 100%;
+        min-width: 0px;
+
+        h3 {
+            font-size: 2.1rem;
+        }
+    
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .threeCards {
+
+        :nth-child(3) {
+            display: none;
+        }
+
+        .cardWrap {
+            width: 100%;
+        
+            .cardTile {
+                text-align: center;
+            }
+        }
+
+        .cardWrap #award p {
+            font-size: 2.5rem;
+            line-height: 4rem;
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .footerMain {
+        flex-direction: column-reverse;
+        
+        .logo {
+            order: 0;
+        }
+
+        .footerSub {
+
+            .subItems {
+                flex-direction: column;
+            }
+
+            a {
+                margin-bottom: 1.5rem;
+            }
+
+            .social {
+                width: 15rem;
+                margin: 0 auto;
+            }
+        }
+
+        .footerSub + .footerSub {
+            margin: 2rem 0rem;
+        }
+    }
+
+    h1 {
+        font-size: $headingFontSize * 0.6;
+        line-height: $headingLineHeight * 0.68;
+    }
+
+    .landingImage {
+        height: 30rem;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .landingImage {
+        height: 25rem;
+    }
+
+    .homes .whiteoverlaybox {
+        margin-bottom: 14rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .landingImage {
+        height: 20rem;
+    }
+    
+    .threeCards .cardWrap #award p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+// 600 and under
+//normal normal 500 4rem/5.5rem "Baskervville", serif
+
+//600 to 900
+//normal normal 500 5rem/6rem "Baskervville", serif

@@ -1,0 +1,488 @@
+.animate-sweet-in {
+    -webkit-animation:sweet-in 1s ease-out forwards;
+    animation:sweet-in 1s ease-out forwards;
+    opacity:0
+}
+
+
+@keyframes sweet-in {
+    0% {
+        opacity:0;
+        -webkit-transform:translateY(40px);
+        transform:translateY(40px)
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+}
+
+h1 {
+    font: $headingFont;
+    margin: 0%;
+    padding-top: calc(10rem + 70px);
+    padding-bottom: 12rem;
+    color: $secondaryColour;
+   
+    width: 90%;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    animation: sweet-in 1s ease-out forwards;
+
+    span {
+        color: $primaryColour;
+    }
+}
+
+
+h2 {
+    font: $subheadingFont;
+    margin: 6% 0%;
+}
+
+h3 {
+    font: $sectionHeadingFont;
+    color: $primaryColour;
+}
+
+h4 {
+    font: $baseFont;
+}
+
+.landingImage {
+    height: 70rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10rem;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.cityText {
+    width: 60%;
+    margin: 0 auto;
+    min-width: 668px;
+    h2 {
+        font: $sectionHeadingFont;
+        color: $secondaryColour;
+
+        span {
+            color: $primaryColour;
+        }
+    }
+
+    h3 {
+        font: $bodyFont;
+        margin-bottom: 0.25rem;
+        font-size: 2.4rem;
+        line-height: 1.58;
+        font-weight: 500;
+    }
+
+    p {
+        font: $baseFont;
+        margin-top: 0;
+        margin-bottom: 5rem;
+        font-size: 2.1rem;
+        line-height: 1.58;
+        color: $secondaryColour;
+
+        a {
+            color: $primaryColour;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+    .cardWrap {
+        position: relative;
+        width: 45%;
+
+        :hover {
+            cursor: pointer;
+            box-shadow: $boxShadow;
+            transition: all 0.3s ease;
+        }
+
+        .card {
+            :hover {
+                box-shadow: none;
+            }
+            .cardTile {
+                height: 30rem;
+                overflow: hidden;
+                position: relative;
+                border-radius: 1rem 1rem 0rem 0rem;
+                
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    display: block;
+                    position: absolute; 
+                    top: 0px; 
+                    left: 0px; 
+                    height: 100%; 
+                    object-fit: cover; 
+                    object-position: center center; 
+                    opacity: 1; 
+                    transition: opacity 500ms ease 0s;
+                }
+            }
+
+            .cardText {
+                font: $baseFont;
+                padding-bottom: 4%;
+                padding-left: 4%;
+
+                p {
+                    font-size: $baseFontSize * 1.1;
+                    line-height: $baseFontLineHeight * 1.1;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $primaryColour;
+                    background-color: #2E425B;
+                    font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+                    color: white;
+                    display: inline-block;
+                    padding: 1.5rem 4rem;
+                    text-decoration: none;
+                    border-radius: 1rem;
+                    border: 1px solid white;
+                    white-space: nowrap;                   
+                }
+            }
+        }            
+    }
+}
+
+.sectionHeading {
+    text-align: center;
+    font: $sectionHeadingFont;
+    color: $primaryColour;
+    margin: 5rem 0 2rem 0;
+}
+
+.headingUnderline {
+    width: 9rem;
+    height: 0px;
+    border: 2px solid #C89AA4;
+    margin: 0 auto;
+}
+
+.threeCards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 7%;
+
+    .cardWrap {
+        width: 30%;
+        
+        .cardTile {
+            height: 30rem;
+            overflow: hidden;
+            position: relative;
+            border-radius: 1rem 1rem 0rem 0rem;
+            
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                height: 100%; 
+                object-fit: contain; 
+                object-position: center center; 
+                opacity: 1; 
+                transition: opacity 500ms ease 0s;
+            }
+        }
+
+        #award {
+            background-image: url(../images/marble2.jpg) ;
+            display: table;
+            p {
+                font-family: $headingFontFamily;
+                font-size: 3.5rem;
+                color: #2e425b;
+                text-align: center;
+                line-height: 7rem;
+                font-weight: 300;
+                vertical-align: middle; 
+                padding-left: 1%;
+                padding-right: 2%;
+                // padding: 2rem;
+                display: table-cell;
+            }
+        }
+
+        // .cardText {
+        //     font: $baseFont;
+        //     padding-bottom: 2%;
+        //     padding-left: 2%;
+            
+        //     .heading {
+        //         font: $bodyFont;
+        //         font-size: $bodyFontSize * 0.85;
+        //         line-height: $bodyLineHeight * 0.85;
+        //     }
+        // }
+    }            
+}
+
+.ctaCards {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-around;
+    
+    .ctaCardWrap {
+    width: 40%;
+    position: relative;
+    
+        :hover {
+        box-shadow: $boxShadow;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+
+        .ctaCard {
+            position: relative;
+            padding: 4%;
+
+            :hover {
+                box-shadow: none;
+            }
+            p {
+                font: $baseFont;
+                color: $secondaryColour;
+                width: 90%;
+            }
+            a {
+                text-decoration: none;
+                color: $primaryColour;
+                font: $sectionHeadingFont;
+                font-size: $sectionHeadingFontSize * 0.7;
+                line-height: $sectionHeadingLineHeight * 0.7;
+                text-transform: capitalize;
+                position: relative;
+            }
+
+            i {
+                font-size: 2rem;
+            }
+          
+        }
+    }
+}
+
+.ctaCards .ctaCardWrap .ctaCard a span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    // background-image: url('empty.gif');
+}
+
+.cards .cardWrap .cardText a span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    // background-image: url('empty.gif');
+}
+
+.ctaCard a span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    // background-image: url('empty.gif');
+}
+
+.homes {
+    margin-bottom: 10rem;
+    :hover {
+        cursor: pointer;
+    }
+    
+    .whiteoverlaybox {
+        background-image: linear-gradient(360deg, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+        height: 40rem;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin-right: 4%;
+        position: relative;
+        text-align: center;
+
+        .getaFeel {
+            font: $baseFont;
+            font-size: 3rem;
+            // Line height has to be the same as height of div
+            padding-top: 32rem;
+            padding-bottom: 2rem;
+            color: $primaryColour;
+            text-align: center;
+            margin: 0%;
+            line-height: 4.2rem;
+            // display: block;
+            }
+        
+        .bigButton {
+            border: 0;
+            font: $linkFont;
+            background-color:$primaryColour;
+            padding: 10px 22px;
+            border-radius: 1rem;
+            margin: 0 auto; 
+            color :white;
+            border: 1px solid #2E425B;  
+            text-decoration: none;      
+        }    
+    }
+}
+
+.homes .whiteoverlaybox .bigButton:hover {
+    background-color: white;
+    color: $primaryColour;
+    transition: all 0.3s ease;
+}
+
+.bigButton span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+
+    z-index: 1;
+
+    /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */
+    // background-image: url('empty.gif');
+} 
+
+.reviews {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	padding: 10px 0;
+}
+
+.review {
+    width: 100%;
+    height: auto;
+    color:$secondaryColour; 
+    .review-data-header {   
+        margin-bottom: 0.65rem;
+        font: $baseFont;
+    }
+    background-color: #fff;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    margin: 0 10px 30px 0;
+    padding: 40px;
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,.15);
+    line-height: 1;
+
+    .review-body {
+        .review-title {
+            font: $bodyFont;
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+        }
+
+        .review-text {
+            font: $baseFont;
+            
+        }
+    }
+}
+
+
+.review header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.review .review-body {
+    margin-top: 12px;
+    line-height: 1.3;
+}
+
+.review .review-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+@media (min-width:768px) {
+    .review {
+        width:46%;
+        height:300px;
+        margin-right:20px
+    }
+}
+
+@media (min-width:992px) {
+.review {
+    height:275px
+}
+}
+@media (min-width:1200px) {
+.review {
+    width:370px
+}
+}

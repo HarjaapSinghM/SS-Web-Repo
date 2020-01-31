@@ -1,0 +1,943 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+.wrapper {
+  width: 88%;
+  max-width: 1340px;
+  margin: 0 auto; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 1%;
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
+  nav .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 1%;
+    width: 77%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    nav .navLinks a {
+      margin: 0% 3%;
+      color: inherit;
+      text-decoration: none; }
+  nav .navRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 68%; }
+
+.CTA {
+  color: white;
+  font-family: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+  background-color: #2E425B;
+  margin-top: 0.5rem;
+  border-radius: 0.8rem;
+  line-height: 4rem;
+  height: 4rem;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-top: 0.5rem; }
+
+.animate-sweet-in {
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards;
+  opacity: 0; }
+
+@-webkit-keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes sweet-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+h1 {
+  font: normal normal 500 7rem/8rem "Baskervville", serif;
+  margin: 0%;
+  padding-top: calc(10rem + 70px);
+  padding-bottom: 12rem;
+  color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation: sweet-in 1s ease-out forwards;
+  animation: sweet-in 1s ease-out forwards; }
+  h1 span {
+    color: #2E425B; }
+
+h2 {
+  font: normal normal 500 5rem/6rem "Baskervville", serif;
+  margin: 6% 0%; }
+
+h3 {
+  font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+  color: #2E425B; }
+
+h4 {
+  font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
+
+.landingImage {
+  height: 70rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10rem; }
+  .landingImage img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
+
+.cityText {
+  width: 60%;
+  margin: 0 auto;
+  min-width: 668px; }
+  .cityText h2 {
+    font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+    color: rgba(0, 0, 0, 0.6); }
+    .cityText h2 span {
+      color: #2E425B; }
+  .cityText h3 {
+    font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
+    margin-bottom: 0.25rem;
+    font-size: 2.4rem;
+    line-height: 1.58;
+    font-weight: 500; }
+  .cityText p {
+    font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    font-size: 2.1rem;
+    line-height: 1.58;
+    color: rgba(0, 0, 0, 0.6); }
+    .cityText p a {
+      color: #2E425B; }
+      .cityText p a:hover {
+        color: black; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 7%;
+  margin-bottom: 7%; }
+  .cards .cardWrap {
+    position: relative;
+    width: 45%; }
+    .cards .cardWrap :hover {
+      cursor: pointer;
+      -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .cards .cardWrap .card :hover {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .cards .cardWrap .card .cardTile {
+      height: 30rem;
+      overflow: hidden;
+      position: relative;
+      border-radius: 1rem 1rem 0rem 0rem; }
+      .cards .cardWrap .card .cardTile img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center center;
+        object-position: center center;
+        opacity: 1;
+        -webkit-transition: opacity 500ms ease 0s;
+        -o-transition: opacity 500ms ease 0s;
+        transition: opacity 500ms ease 0s; }
+    .cards .cardWrap .card .cardText {
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+      padding-bottom: 4%;
+      padding-left: 4%; }
+      .cards .cardWrap .card .cardText p {
+        font-size: 1.76rem;
+        line-height: 2.2rem; }
+      .cards .cardWrap .card .cardText a {
+        text-decoration: none;
+        color: #2E425B;
+        background-color: #2E425B;
+        font: normal normal 500 1.6rem/2rem "Open Sans", sans-serif;
+        color: white;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        border: 1px solid white;
+        white-space: nowrap; }
+
+.sectionHeading {
+  text-align: center;
+  font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+  color: #2E425B;
+  margin: 5rem 0 2rem 0; }
+
+.headingUnderline {
+  width: 9rem;
+  height: 0px;
+  border: 2px solid #C89AA4;
+  margin: 0 auto; }
+
+.threeCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 7%; }
+  .threeCards .cardWrap {
+    width: 30%; }
+    .threeCards .cardWrap .cardTile {
+      height: 30rem;
+      overflow: hidden;
+      position: relative;
+      border-radius: 1rem 1rem 0rem 0rem; }
+      .threeCards .cardWrap .cardTile img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: center center;
+        object-position: center center;
+        opacity: 1;
+        -webkit-transition: opacity 500ms ease 0s;
+        -o-transition: opacity 500ms ease 0s;
+        transition: opacity 500ms ease 0s; }
+    .threeCards .cardWrap #award {
+      background-image: url(../images/marble2.jpg);
+      display: table; }
+      .threeCards .cardWrap #award p {
+        font-family: "Baskervville", serif;
+        font-size: 3.5rem;
+        color: #2e425b;
+        text-align: center;
+        line-height: 7rem;
+        font-weight: 300;
+        vertical-align: middle;
+        padding-left: 1%;
+        padding-right: 2%;
+        display: table-cell; }
+
+.ctaCards {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .ctaCards .ctaCardWrap {
+    width: 40%;
+    position: relative; }
+    .ctaCards .ctaCardWrap :hover {
+      -webkit-box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      box-shadow: 0 0.1875rem 0.625rem 0 rgba(75, 89, 109, 0.3);
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .ctaCards .ctaCardWrap .ctaCard {
+      position: relative;
+      padding: 4%; }
+      .ctaCards .ctaCardWrap .ctaCard :hover {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .ctaCards .ctaCardWrap .ctaCard p {
+        font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+        color: rgba(0, 0, 0, 0.6);
+        width: 90%; }
+      .ctaCards .ctaCardWrap .ctaCard a {
+        text-decoration: none;
+        color: #2E425B;
+        font: normal normal 500 4.3rem/6rem "Baskervville", serif;
+        font-size: 3.01rem;
+        line-height: 4.2rem;
+        text-transform: capitalize;
+        position: relative; }
+      .ctaCards .ctaCardWrap .ctaCard i {
+        font-size: 2rem; }
+
+.ctaCards .ctaCardWrap .ctaCard a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.cards .cardWrap .cardText a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.ctaCard a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.homes {
+  margin-bottom: 10rem; }
+  .homes :hover {
+    cursor: pointer; }
+  .homes .whiteoverlaybox {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(22.95%, #FFFFFF), color-stop(93.73%, rgba(255, 255, 255, 0))), url("../images/tourHomes.jpg");
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+    background-image: -o-linear-gradient(bottom, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+    background-image: linear-gradient(360deg, #FFFFFF 22.95%, rgba(255, 255, 255, 0) 93.73%), url("../images/tourHomes.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-right: 4%;
+    position: relative;
+    text-align: center; }
+    .homes .whiteoverlaybox .getaFeel {
+      font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif;
+      font-size: 3rem;
+      padding-top: 32rem;
+      padding-bottom: 2rem;
+      color: #2E425B;
+      text-align: center;
+      margin: 0%;
+      line-height: 4.2rem; }
+    .homes .whiteoverlaybox .bigButton {
+      border: 0;
+      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      background-color: #2E425B;
+      padding: 10px 22px;
+      border-radius: 1rem;
+      margin: 0 auto;
+      color: white;
+      border: 1px solid #2E425B;
+      text-decoration: none; }
+
+.homes .whiteoverlaybox .bigButton:hover {
+  background-color: white;
+  color: #2E425B;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.bigButton span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+        make sure you have an empty gif */ }
+
+.reviews {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 10px 0; }
+
+.review {
+  width: 100%;
+  height: auto;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  margin: 0 10px 30px 0;
+  padding: 40px;
+  -webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
+  line-height: 1; }
+  .review .review-data-header {
+    margin-bottom: 0.65rem;
+    font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
+  .review .review-body .review-title {
+    font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem; }
+  .review .review-body .review-text {
+    font: normal normal 500 1.6rem/2.4rem "Quicksand", sans-serif; }
+
+.review header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.review .review-body {
+  margin-top: 12px;
+  line-height: 1.3; }
+
+.review .review-title {
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+@media (min-width: 768px) {
+  .review {
+    width: 46%;
+    height: 300px;
+    margin-right: 20px; } }
+
+@media (min-width: 992px) {
+  .review {
+    height: 275px; } }
+
+@media (min-width: 1200px) {
+  .review {
+    width: 370px; } }
+
+.footerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 9rem; }
+  .footerTop h3 {
+    margin-bottom: 0%; }
+  .footerTop .lineTwo {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0%; }
+  .footerTop .callCTA {
+    background-color: #2E425B;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    margin: 5% 0% 1% 0%;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    .footerTop .callCTA p {
+      font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
+      color: rgba(255, 255, 255, 0.79);
+      margin-bottom: 0%;
+      margin-top: 0%;
+      padding-bottom: 3%; }
+    .footerTop .callCTA .number {
+      font: normal normal 500 1.6rem/2rem "Quicksand", sans-serif;
+      color: white;
+      font-weight: 600;
+      font-size: 2.3rem;
+      margin-top: 1%; }
+
+.footerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5%; }
+  .footerMain .footerSub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font: normal normal 400 2.1rem/3rem "Quicksand", sans-serif;
+    color: #2E425B; }
+    .footerMain .footerSub .subItems {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .footerMain .footerSub .social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-size: 3.5rem; }
+      .footerMain .footerSub .social a + a {
+        margin-left: 1.5rem; }
+    .footerMain .footerSub a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 2.6rem; }
+
+.footerMain .footerSub a:hover {
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+@media (max-width: 1442px) {
+  nav {
+    font-size: 1.4rem; }
+    nav .navRight {
+      width: 80%; }
+  .family .familyText h4 {
+    font-size: 1.89rem;
+    line-height: 2.7rem;
+    width: 100%; } }
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 3.44rem;
+    line-height: 4.8rem; }
+  .footerMain .footerSub {
+    font-size: 1.68rem;
+    line-height: 2.4rem; }
+  #legal {
+    display: none; }
+  .landingImage {
+    height: 60rem; }
+  .threeCards {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .threeCards .cardWrap {
+      width: 50%; }
+      .threeCards .cardWrap .cardTile {
+        height: 35rem; }
+      .threeCards .cardWrap #award {
+        height: 15rem;
+        width: 100%; }
+        .threeCards .cardWrap #award p {
+          padding-top: 0%; }
+    .threeCards .cardWrap.award {
+      width: 100%;
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+      margin-top: 5rem; } }
+
+@media (max-width: 1000px) {
+  .landingImage {
+    height: 50rem; }
+  .cards .cardWrap .card .cardTile {
+    height: 23rem; }
+  .ctaCards .ctaCardWrap .ctaCard a {
+    font-size: 2.58rem;
+    line-height: 3.6rem; }
+  .threeCards .cardWrap #award p {
+    font-size: 3rem;
+    line-height: 5rem; } }
+
+@media (max-width: 900px) {
+  h1 {
+    width: 100%;
+    font-size: 5.6rem;
+    line-height: 6.8rem; }
+  .family {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin-top: 0rem; }
+    .family .familyPhoto {
+      width: 100%;
+      margin-bottom: 6rem; }
+    .family .familyText {
+      width: 90%;
+      margin: 1rem auto 6rem;
+      padding-left: 0%;
+      text-align: center; }
+      .family .familyText h4 {
+        margin: 3rem auto 0rem; }
+    .family .familyText .underlined::after {
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+  .landingImage {
+    margin-bottom: 1rem; } }
+
+@media (max-width: 827px) {
+  .ctaCards {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .ctaCards .ctaCardWrap {
+      width: 100%; }
+    .ctaCards .ctaCardWrap + .ctaCardWrap {
+      margin-top: 3rem; }
+    .ctaCards p {
+      width: 100%; } }
+
+@media (max-width: 800px) {
+  .footerTop {
+    margin-bottom: 5rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .footerTop .leftText {
+      width: 100%;
+      text-align: center; }
+    .footerTop h3 {
+      margin: 0%; }
+    .footerTop .callCTA {
+      text-align: center;
+      margin: 5% auto; }
+  .footerMain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 3rem; }
+    .footerMain .footerSub {
+      text-align: center; }
+    .footerMain .logo {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+      width: 100%;
+      text-align: center; }
+    .footerMain #navigation {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+  .landingImage {
+    height: 40rem; } }
+
+@media (max-width: 763px) {
+  .cards {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .cards .cardWrap {
+      width: 100%; }
+    .cards .cardWrap + .cardWrap {
+      margin-top: 5rem; }
+  .threeCards .cardWrap .cardTile {
+    height: 28rem; }
+  .cityText {
+    width: 100%;
+    min-width: 0px; }
+    .cityText h3 {
+      font-size: 2.1rem; }
+    .cityText p {
+      font-size: 1.8rem; } }
+
+@media (max-width: 700px) {
+  .threeCards :nth-child(3) {
+    display: none; }
+  .threeCards .cardWrap {
+    width: 100%; }
+    .threeCards .cardWrap .cardTile {
+      text-align: center; }
+  .threeCards .cardWrap #award p {
+    font-size: 2.5rem;
+    line-height: 4rem; } }
+
+@media (max-width: 600px) {
+  .footerMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .footerMain .logo {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; }
+    .footerMain .footerSub .subItems {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .footerMain .footerSub a {
+      margin-bottom: 1.5rem; }
+    .footerMain .footerSub .social {
+      width: 15rem;
+      margin: 0 auto; }
+    .footerMain .footerSub + .footerSub {
+      margin: 2rem 0rem; }
+  h1 {
+    font-size: 4.2rem;
+    line-height: 5.44rem; }
+  .landingImage {
+    height: 30rem; } }
+
+@media (max-width: 500px) {
+  .landingImage {
+    height: 25rem; }
+  .homes .whiteoverlaybox {
+    margin-bottom: 14rem; } }
+
+@media (max-width: 400px) {
+  .landingImage {
+    height: 20rem; }
+  .threeCards .cardWrap #award p {
+    padding-left: 3%;
+    padding-right: 3%; } }
