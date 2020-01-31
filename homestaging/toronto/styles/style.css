@@ -801,6 +801,9 @@ h4 {
     width: 100%;
     font-size: 5.6rem;
     line-height: 6.8rem; }
+  .cityText h2 {
+    font-size: 3.44rem;
+    line-height: 5.1rem; }
   .family {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;

@@ -97,6 +97,10 @@
         line-height: $headingLineHeight * 0.85;
     }
 
+    .cityText h2 {
+        font-size: $sectionHeadingFontSize * 0.8;
+        line-height: $sectionHeadingLineHeight * 0.85;
+    }
     .family {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -286,6 +290,10 @@
         line-height: $headingLineHeight * 0.68;
     }
 
+    // .cityText h2 {
+    //     font-size: $sectionHeadingFontSize * 0.6;
+    //     line-height: $sectionHeadingLineHeight * 0.68;
+    // }
     .landingImage {
         height: 30rem;
     }
