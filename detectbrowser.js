@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var isIE = /*@cc_on!@*/false || !!document.documentMode;
 
     if(isIE == true) {
-        alert('IE not supported')
-        console.log('Hello');
+        alert("Note: This site does not support Internet Explorer. For an ideal viewing experience, please use a modern browser such as Microsoft Edge, Google Chrome, or Firefox");
     };
 
 });
