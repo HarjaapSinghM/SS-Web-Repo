@@ -14,6 +14,12 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .family .familyPhoto {
+        height: 46rem;
+    }
+}
+
 @media (max-width: 1200px) {
     h3 {
         font-size: $sectionHeadingFontSize * 0.8;
@@ -88,14 +94,6 @@
         font-size: 3rem;
         line-height: 5rem;
     }
-}
-
-@media (max-width: 900px) {
-    h1 {
-        width: 100%;
-        font-size: $headingFontSize * 0.8;
-        line-height: $headingLineHeight * 0.85;
-    }
 
     .family {
         flex-wrap: wrap;
@@ -105,6 +103,7 @@
         .familyPhoto {
             width: 100%;
             margin-bottom: 6rem;
+            height: 53rem;
         }
 
         .familyText {
@@ -122,6 +121,15 @@
             margin: 0 auto;
             margin-bottom: 1rem;
         }
+    }
+
+}
+
+@media (max-width: 900px) {
+    h1 {
+        width: 100%;
+        font-size: $headingFontSize * 0.8;
+        line-height: $headingLineHeight * 0.85;
     }
 
     .landingImage {
@@ -235,7 +243,10 @@
             font-size: 2.5rem;
             line-height: 4rem;
         }
+    }
 
+    .family .familyPhoto {
+        height: 46rem;
     }
 }
 
@@ -281,6 +292,13 @@
     
 }
 
+@media (max-width: 550px) {
+    .family .familyPhoto {
+        height: 33rem;
+    }
+}
+
+
 @media (max-width: 500px) {
     .landingImage {
         height: 25rem;
@@ -288,6 +306,12 @@
 
     .homes .whiteoverlaybox {
         margin-bottom: 14rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .family .familyPhoto {
+        height: 27rem;
     }
 }
 
@@ -299,6 +323,12 @@
     .threeCards .cardWrap #award p {
         padding-left: 3%;
         padding-right: 3%;
+    }
+}
+
+@media (max-width: 350px) {
+    .family .familyPhoto {
+        height: 21rem;
     }
 }
 // 600 and under

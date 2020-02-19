@@ -784,6 +784,10 @@ h4 {
     line-height: 2.7rem;
     width: 100%; } }
 
+@media (max-width: 1400px) {
+  .family .familyPhoto {
+    height: 46rem; } }
+
 @media (max-width: 1200px) {
   h3 {
     font-size: 3.44rem;
@@ -824,13 +828,7 @@ h4 {
     line-height: 3.6rem; }
   .threeCards .cardWrap #award p {
     font-size: 3rem;
-    line-height: 5rem; } }
-
-@media (max-width: 900px) {
-  h1 {
-    width: 100%;
-    font-size: 5.6rem;
-    line-height: 6.8rem; }
+    line-height: 5rem; }
   .family {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -841,7 +839,8 @@ h4 {
     margin-top: 0rem; }
     .family .familyPhoto {
       width: 100%;
-      margin-bottom: 6rem; }
+      margin-bottom: 6rem;
+      height: 53rem; }
     .family .familyText {
       width: 90%;
       margin: 1rem auto 6rem;
@@ -851,7 +850,13 @@ h4 {
         margin: 3rem auto 0rem; }
     .family .familyText .underlined::after {
       margin: 0 auto;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem; } }
+
+@media (max-width: 900px) {
+  h1 {
+    width: 100%;
+    font-size: 5.6rem;
+    line-height: 6.8rem; }
   .landingImage {
     margin-bottom: 1rem; } }
 
@@ -922,7 +927,9 @@ h4 {
       text-align: center; }
   .threeCards .cardWrap #award p {
     font-size: 2.5rem;
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  .family .familyPhoto {
+    height: 46rem; } }
 
 @media (max-width: 600px) {
   .footerMain {
@@ -952,11 +959,19 @@ h4 {
   .landingImage {
     height: 30rem; } }
 
+@media (max-width: 550px) {
+  .family .familyPhoto {
+    height: 33rem; } }
+
 @media (max-width: 500px) {
   .landingImage {
     height: 25rem; }
   .homes .whiteoverlaybox {
     margin-bottom: 14rem; } }
+
+@media (max-width: 450px) {
+  .family .familyPhoto {
+    height: 27rem; } }
 
 @media (max-width: 400px) {
   .landingImage {
@@ -964,3 +979,7 @@ h4 {
   .threeCards .cardWrap #award p {
     padding-left: 3%;
     padding-right: 3%; } }
+
+@media (max-width: 350px) {
+  .family .familyPhoto {
+    height: 21rem; } }
