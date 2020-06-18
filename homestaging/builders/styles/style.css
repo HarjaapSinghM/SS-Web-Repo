@@ -301,7 +301,7 @@ nav .navRight {
 }
 
 h1 {
-  font: normal normal 500 7rem/8rem "Baskervville", serif;
+  font: normal normal 500 4.5rem/5rem "Baskervville", serif;
   margin: 0%;
   padding-top: calc(10rem + 70px);
   padding-bottom: 12rem;
@@ -356,7 +356,7 @@ h4 {
 }
 
 .agentReco .quote {
-  font: normal normal 500 7rem/8rem "Baskervville", serif;
+  font: normal normal 500 4.5rem/5rem "Baskervville", serif;
   font-size: 4rem;
   color: #CD8D81;
   margin: 0%;
