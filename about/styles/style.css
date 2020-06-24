@@ -321,7 +321,7 @@ p {
 .onePhoto {
   width: 100%;
   position: relative;
-  height: 54rem;
+  height: 5rem;
   width: 100%;
 }
 
@@ -731,7 +731,7 @@ p {
     text-align: center;
   }
   .onePhoto {
-    height: 40rem;
+    height: 5rem;
   }
 }
 
@@ -841,7 +841,7 @@ p {
 
 @media (max-width: 700px) {
   .onePhoto {
-    height: 34rem;
+    height: 5rem;
   }
 }
 
@@ -902,7 +902,7 @@ p {
     height: 24rem;
   }
   .onePhoto {
-    height: 25rem;
+    height: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
